@@ -7,6 +7,10 @@
     --menu: #16324a;
     --menu-texto: #c9d6e2;
     --destaque: #1f7a8c;
+    --critica: #b3261e;
+    --alta: #d9822b;
+    --media: #c9a227;
+    --baixa: #3c8d5a;
 }
 
 * {
@@ -207,6 +211,7 @@ body {
     border: 1px dashed var(--borda);
     border-radius: 10px;
     color: var(--texto-suave);
+    position: relative;
 }
 
 .grafico.grande {
