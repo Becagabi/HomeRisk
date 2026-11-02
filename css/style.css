@@ -2857,3 +2857,36 @@ body {
     color: var(--texto);
     font: inherit;
 }
+
+/* Rodapé de autoria HomeRisk — compartilhado por todas as páginas */
+.homerisk-rodape {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    padding: 18px 32px;
+    margin-top: 8px;
+    border-top: 1px solid var(--borda);
+    color: var(--texto-suave);
+    background: var(--fundo);
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
+.homerisk-rodape strong {
+    color: var(--texto);
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .homerisk-rodape {
+        align-items: center;
+        flex-direction: column;
+        gap: 3px;
+        padding: 16px 18px;
+        text-align: center;
+    }
+}
+
