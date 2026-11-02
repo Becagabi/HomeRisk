@@ -1,0 +1,29 @@
+﻿entidade/aba;campo;descricao;tipo_sql_sugerido;observacoes
+Imoveis;id_imovel;Identificador único do registro do imóvel.;INT;"Chave primária; demonstrativo."
+Imoveis;nome_imovel;Nome curto usado para identificar o imóvel.;VARCHAR(80);Ex.: Apto 101.
+Imoveis;endereco_demonstrativo;Endereço fictício usado no protótipo.;VARCHAR(150);Não representa endereço real.
+Imoveis;bairro;Bairro do imóvel.;VARCHAR(80);Relaciona com Regioes.bairro.
+Imoveis;regiao;Região macro apresentada no protótipo.;VARCHAR(40);Ex.: Centro, Norte, Sul.
+Imoveis;tipo_imovel;Categoria do imóvel.;VARCHAR(30);Apartamento ou Casa.
+Imoveis;area_m2;Área do imóvel em metros quadrados.;DECIMAL(10,2);
+Imoveis;latitude_aproximada;Latitude demonstrativa/aproximada.;DECIMAL(9,6);Não usar como coordenada real.
+Imoveis;longitude_aproximada;Longitude demonstrativa/aproximada.;DECIMAL(9,6);Não usar como coordenada real.
+Imoveis;valor_venda_brl;Valor de venda demonstrativo em reais.;DECIMAL(14,2);
+Imoveis;valor_aluguel_brl;Valor de aluguel demonstrativo em reais.;DECIMAL(14,2);
+Imoveis;saneamento_nota;Nota demonstrativa de saneamento (0 a 100).;INT;"Nota de qualidade; invertida no cálculo do risco."
+Imoveis;infraestrutura_nota;Nota demonstrativa de infraestrutura (0 a 100).;INT;"Nota de qualidade; invertida no cálculo do risco."
+Imoveis;transporte_nota;Nota demonstrativa de transporte (0 a 100).;INT;"Nota de qualidade; invertida no cálculo do risco."
+Imoveis;seguranca_nota;Nota demonstrativa de segurança (0 a 100).;INT;"Nota de qualidade; invertida no cálculo do risco."
+Imoveis;vulnerabilidade_nota;Indicador demonstrativo de vulnerabilidade (0 a 100).;INT;"Entra diretamente no cálculo; não é avaliação de pessoas."
+Imoveis;ocorrencias_nota_demonstrativa;Campo existente na fonte original.;INT;Não participa do índice geral de risco atual.
+Imoveis;risco_eletrico/hidraulico/estrutural/infiltracao;Notas demonstrativas de risco físico do imóvel.;INT;Campos separados para aprofundamento futuro.
+Imoveis;historico_indice_periodo_1_a_4;Lista com quatro índices históricos por imóvel.;ARRAY/JSON;O código não informa datas dos períodos.
+Regioes;bairro;Bairro correspondente ao registro territorial.;VARCHAR(80);Um registro por bairro na base atual.
+Regioes;regiao;Região macro do bairro.;VARCHAR(40);
+Regioes;saneamento/infraestrutura/transporte/seguranca/vulnerabilidade;Notas territoriais demonstrativas (0 a 100).;INT;Mesma lógica de risco em cinco fatores.
+Historico_Relatos;bairro + categoria_indicador + mes_referencia;Dimensão do registro histórico.;Composição;Chave candidata para histórico agregado.
+Historico_Relatos;quantidade_demonstrativa;Quantidade calculada de relatos por bairro, categoria e mês.;INT;Gerada por volume-base x variação mensal.
+Historico_Imoveis;id_imovel + periodo_sequencial;Identifica cada período histórico do imóvel.;Composição;Não há data real informada na fonte.
+Historico_Imoveis;indice_risco;Índice armazenado no vetor histórico do imóvel.;INT;Valor reproduzido literalmente.
+Historico_Mercado;mes_referencia;Mês da série hipotética de mercado.;VARCHAR(10);Nov/25 a Out/26.
+Historico_Mercado;fator_variacao_hipotetico;Fator mensal relativo demonstrativo.;DECIMAL(6,3);Não corresponde a preços coletados.

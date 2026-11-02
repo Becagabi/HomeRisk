@@ -1,0 +1,37 @@
+HOMERISK — FASE 3 / ETAPA 2: IMPORTAÇÃO DOS DADOS
+
+Pré-requisito:
+- Ter executado criar_banco.py na Etapa 1 e possuir HomeRisk.db na raiz.
+
+Arquivos:
+- importar_dados.py: importa os CSVs para o SQLite.
+- dados_csv/: CSVs exportados/gerados para o HomeRisk.
+- sql/02_consultas_validacao.sql: consultas SQL para conferir os dados e praticar JOIN/GROUP BY.
+
+Como instalar no projeto:
+1. Copie importar_dados.py para a mesma pasta onde está HomeRisk.db.
+2. Copie a pasta dados_csv inteira para essa mesma pasta.
+3. Copie a pasta sql/02_consultas_validacao.sql para a pasta sql já existente.
+4. Abra o terminal na raiz do projeto.
+5. Execute: python importar_dados.py
+   Se necessário: py importar_dados.py
+
+Resultado esperado:
+regioes: 8 registros
+imoveis: 8 registros
+historico_imoveis: 32 registros
+historico_relatos: 480 registros
+historico_mercado: 12 registros
+
+A importação usa transação e UPSERT. Executar novamente atualiza registros existentes sem duplicá-los.
+
+Decisões de modelagem:
+- Os cinco indicadores territoriais ficam em REGIOES, não duplicados em IMOVEIS.
+- O campo regiao repetido em Historico_Relatos.csv é conferido, mas não gravado porque pode ser obtido via REGIOES.
+- nome_imovel repetido em Historico_Imoveis.csv é redundante; a relação usa id_imovel.
+- Os campos derivados indice_risco, nivel_risco, ajuste_hipotetico_pct e valor_venda_ajustado_brl não são importados como dados-base. Serão calculados depois com SQL.
+- Dicionario.csv e LEIA-ME.csv são documentação, não tabelas operacionais.
+- Todos os registros são demonstrativos.
+
+Consultas:
+Abra sql/02_consultas_validacao.sql num editor SQLite e execute cada consulta para estudar COUNT, SELECT, JOIN, AVG e GROUP BY.

@@ -1,0 +1,9 @@
+﻿bairro;regiao;saneamento_nota;infraestrutura_nota;transporte_nota;seguranca_nota;vulnerabilidade_nota;indice_risco_calculado;nivel_risco_calculado
+Bom Retiro;Centro;70;65;90;55;60;41;Moderado
+Pinheiros;Oeste;85;80;75;70;40;28;Baixo
+Itaquera;Leste;30;30;50;30;85;72;Alto
+Moema;Sul;90;85;70;80;25;20;Baixo
+Vila Maria;Norte;60;55;65;50;65;50;Moderado
+Santana;Norte;75;70;85;65;50;34;Baixo
+Capão Redondo;Sul;35;40;45;35;80;68;Moderado
+Tucuruvi;Norte;65;60;75;60;55;42;Moderado

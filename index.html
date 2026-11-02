@@ -4,36 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HomeRisk</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
   <!-- MENU LATERAL -->
   <aside class="menu">
     <div class="marca">
       <span class="marca-icone">H</span>
       <div>
         <strong>HomeRisk</strong>
-        <small>Inteligência de risco</small>
+        <small>Risco e mercado imobiliário</small>
       </div>
     </div>
 
     <nav>
       <a href="index.html" class="ativo">Dashboard</a>
-      <a href="#">Apartamentos</a>
-      <a href="#">Vistorias</a>
-      <a href="#">Análise</a>
-      <a href="#">Simulador</a>
+      <a href="imoveis.html">Imóveis</a>
+      <a href="risco-regiao.html">Risco da região</a>
+      <a href="mercado.html">Mercado imobiliário</a>
+      <a href="sobre.html">Sobre</a>
     </nav>
   </aside>
 
   <!-- CONTEÚDO PRINCIPAL -->
   <main class="conteudo">
-
     <header class="topo">
       <div>
-        <h1>Dashboard de riscos</h1>
-        <p>Visão geral dos imóveis, ocorrências e prioridades de ação.</p>
+        <h1>Análise de risco e mercado imobiliário</h1>
+        <p>Compare o risco de cada localização com valores de venda e aluguel.</p>
       </div>
     </header>
 
@@ -42,128 +40,189 @@
       <label>Região
         <select id="filtro-regiao">
           <option value="">Todas</option>
+          <option>Centro</option>
           <option>Norte</option>
           <option>Sul</option>
           <option>Leste</option>
           <option>Oeste</option>
         </select>
       </label>
-      <label>Categoria
-        <select id="filtro-categoria">
-          <option value="">Todas</option>
-          <option>Hidráulica</option>
-          <option>Elétrica</option>
-          <option>Estrutural</option>
-          <option>Infiltração</option>
-        </select>
-      </label>
-      <label>Severidade
-        <select id="filtro-severidade">
-          <option value="">Todas</option>
-          <option>Crítica</option>
-          <option>Alta</option>
-          <option>Média</option>
-          <option>Baixa</option>
-        </select>
-      </label>
-      <label>Status
-        <select id="filtro-status">
+      <label>Bairro
+        <select id="filtro-bairro">
           <option value="">Todos</option>
-          <option>Pendente</option>
-          <option>Em andamento</option>
-          <option>Resolvida</option>
+          <option>Bom Retiro</option>
+          <option>Capão Redondo</option>
+          <option>Itaquera</option>
+          <option>Moema</option>
+          <option>Pinheiros</option>
+          <option>Santana</option>
+          <option>Tucuruvi</option>
+          <option>Vila Maria</option>
+        </select>
+      </label>
+      <label>Tipo de imóvel
+        <select id="filtro-tipo">
+          <option value="">Todos</option>
+          <option>Apartamento</option>
+          <option>Casa</option>
+        </select>
+      </label>
+      <label>Faixa de preço (venda)
+        <select id="filtro-preco">
+          <option value="">Todas</option>
+          <option value="ate300">Até R$ 300 mil</option>
+          <option value="300a450">R$ 300 mil a R$ 450 mil</option>
+          <option value="acima450">Acima de R$ 450 mil</option>
+        </select>
+      </label>
+      <label>Nível de risco
+        <select id="filtro-nivel">
+          <option value="">Todos</option>
+          <option>Baixo</option>
+          <option>Moderado</option>
+          <option>Alto</option>
         </select>
       </label>
     </section>
 
-    <!-- INDICADORES (valores de exemplo, JavaScript vai preencher depois) -->
+    <!-- INDICADORES -->
     <section class="indicadores" aria-label="Indicadores">
       <article class="indicador">
-        <span>Imóveis</span>
+        <span>Imóveis analisados</span>
         <strong id="kpi-imoveis"></strong>
       </article>
       <article class="indicador">
-        <span>Ocorrências</span>
-        <strong id="kpi-ocorrencias"></strong>
-      </article>
-      <article class="indicador critico">
-        <span>Riscos críticos</span>
-        <strong id="kpi-criticos">9</strong>
+        <span>Aluguel médio</span>
+        <strong id="kpi-aluguel"></strong>
       </article>
       <article class="indicador">
-        <span>Pendentes</span>
-        <strong id="kpi-pendentes">37</strong>
-      </article>
-      <article class="indicador">
-        <span>Tempo médio de resolução</span>
-        <strong id="kpi-tempo">14 dias</strong>
+        <span>Valor médio de venda</span>
+        <strong id="kpi-venda"></strong>
       </article>
       <article class="indicador destaque">
-        <span>Índice de risco</span>
-        <strong id="kpi-indice">62</strong>
-        <small>de 100</small>
+        <span>Risco médio da região</span>
+        <strong id="kpi-indice"></strong>
+        <p id="detalhes-risco"></p>
+        <small id="nivel-risco">de 100</small>
       </article>
     </section>
 
-    <!-- ESPAÇOS PARA GRÁFICOS (Chart.js entra aqui) -->
+    <!-- GRÁFICOS (Chart.js) -->
     <section class="graficos" aria-label="Gráficos">
       <article class="grafico grande">
-        <h2>Evolução das ocorrências</h2>
+        <h2>Evolução do risco da região</h2>
         <div class="grafico-area"><canvas id="grafico-evolucao"></canvas></div>
+        <div class="legenda-tendencia" aria-label="Legenda da evolução do risco">
+          <span><i class="tendencia-subindo"></i> Risco aumentando</span>
+          <span><i class="tendencia-estavel"></i> Risco estável</span>
+          <span><i class="tendencia-descendo"></i> Risco diminuindo</span>
+        </div>
       </article>
       <article class="grafico">
-        <h2>Problemas por categoria</h2>
+        <h2>Riscos dos indicadores da região</h2>
         <div class="grafico-area"><canvas id="grafico-categoria"></canvas></div>
       </article>
       <article class="grafico">
-        <h2>Distribuição por severidade</h2>
-        <div class="grafico-area"><canvas id="grafico-severidade"></canvas></div>
+        <h2>Imóveis por nível de risco</h2>
+        <div class="grafico-area"><canvas id="grafico-nivel"></canvas></div>
       </article>
     </section>
 
-    <!-- TABELA DE OCORRÊNCIAS (linhas de exemplo) -->
-    <section class="tabela-bloco" aria-label="Ocorrências">
-      <h2>Ocorrências recentes</h2>
-      <div class="tabela-rolagem">
-        <table>
-          <thead>
-            <tr>
-              <th>Imóvel</th>
-              <th>Região</th>
-              <th>Categoria</th>
-              <th>Severidade</th>
-              <th>Status</th>
-              <th>Identificada em</th>
-            </tr>
-          </thead>
-          <tbody id="tabela-ocorrencias">
-            <tr>
-              <td>Apto 101</td><td>Norte</td><td>Infiltração</td>
-              <td><span class="selo critica">Crítica</span></td>
-              <td>Pendente</td><td>12/09/2026</td>
-            </tr>
-            <tr>
-              <td>Apto 204</td><td>Sul</td><td>Elétrica</td>
-              <td><span class="selo alta">Alta</span></td>
-              <td>Em andamento</td><td>18/09/2026</td>
-            </tr>
-            <tr>
-              <td>Apto 312</td><td>Leste</td><td>Hidráulica</td>
-              <td><span class="selo media">Média</span></td>
-              <td>Pendente</td><td>22/09/2026</td>
-            </tr>
-            <tr>
-              <td>Apto 405</td><td>Oeste</td><td>Estrutural</td>
-              <td><span class="selo baixa">Baixa</span></td>
-              <td>Resolvida</td><td>25/09/2026</td>
-            </tr>
-          </tbody>
-        </table>
+    <section class="apartamentos-bloco">
+      <div class="apartamentos-cabecalho">
+        <div>
+          <h2>Imóveis</h2>
+          <p>Prévia dos imóveis analisados</p>
+        </div>
+        <a href="imoveis.html" class="ver-todos">Ver todos →</a>
+      </div>
+
+      <div class="pesquisa-imoveis">
+        <input
+          type="text"
+          id="pesquisa-imovel"
+          placeholder="Pesquisar imóvel, bairro ou região..."
+          aria-label="Pesquisar imóvel, bairro ou região"
+        >
+      </div>
+
+      <div id="lista-apartamentos"></div>
+
+      <a href="imoveis.html" class="botao-imoveis">Ver todos os imóveis</a>
+    </section>
+
+    <section class="detalhes-apartamento" id="detalhes-apartamento">
+      <div class="detalhes-apartamento-cabecalho">
+        <h2>Detalhes do imóvel</h2>
+        <button id="botao-ocultar-detalhes" class="botao-ocultar-detalhes" type="button" hidden>
+          Ocultar detalhes
+        </button>
+      </div>
+      <div id="mensagem-detalhes" class="mensagem-detalhes">
+        <p>Selecione um imóvel para visualizar os detalhes.</p>
       </div>
     </section>
 
+    <p class="aviso">
+      Dados fictícios de protótipo. O índice de risco é um modelo analítico de
+      demonstração e não constitui recomendação imobiliária nem avaliação oficial
+      de segurança de uma localidade. Infraestrutura, saneamento, transporte e
+      segurança: quanto maior, melhor. Vulnerabilidade: quanto maior, pior.
+    </p>
   </main>
+
+  <!-- AJUDA FIXA: ENTENDA OS INDICADORES -->
+  <div class="ajuda-indicadores">
+    <button
+      id="botao-ajuda-indicadores"
+      type="button"
+      aria-expanded="false"
+      aria-controls="painel-ajuda-indicadores"
+    >
+      <span class="icone-ajuda">i</span>
+      Entenda os indicadores
+    </button>
+
+    <section id="painel-ajuda-indicadores" class="painel-ajuda-indicadores" hidden>
+      <div class="cabecalho-ajuda">
+        <h3>Entenda os indicadores</h3>
+        <button id="fechar-ajuda-indicadores" type="button" aria-label="Fechar ajuda">×</button>
+      </div>
+      <div class="conteudo-ajuda">
+        <details>
+          <summary>Índice médio de risco</summary>
+          <p>Resumo demonstrativo dos indicadores dos imóveis que correspondem aos filtros. Quanto maior o índice, maior o risco calculado pelo modelo.</p>
+        </details>
+        <details>
+          <summary>🚰 Saneamento</summary>
+          <p>Indicador de qualidade de saneamento. No cálculo do risco, uma nota menor representa maior risco.</p>
+        </details>
+        <details>
+          <summary>🏗️ Infraestrutura</summary>
+          <p>Indicador de qualidade da infraestrutura urbana. No cálculo do risco, uma nota menor representa maior risco.</p>
+        </details>
+        <details>
+          <summary>🛡️ Segurança</summary>
+          <p>Indicador demonstrativo de segurança. No cálculo do risco, uma nota menor representa maior risco.</p>
+        </details>
+        <details>
+          <summary>🚌 Transporte</summary>
+          <p>Indicador de qualidade de acesso ao transporte. No cálculo do risco, uma nota menor representa maior risco.</p>
+        </details>
+        <details>
+          <summary>⚠️ Vulnerabilidade</summary>
+          <p>Indicador territorial demonstrativo. Diferentemente dos indicadores de qualidade, quanto maior a pontuação, maior o risco considerado pelo modelo.</p>
+        </details>
+        <details>
+          <summary>Gráficos e histórico</summary>
+          <p>Os valores históricos desta versão são fictícios e servem apenas para demonstrar a visualização e o comportamento dos filtros.</p>
+        </details>
+      </div>
+    </section>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="script.js"></script>
+  <script src="js/dados.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

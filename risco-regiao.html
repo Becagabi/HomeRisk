@@ -1,0 +1,553 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HomeRisk - Risco da região</title>
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""
+    >
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- MENU LATERAL -->
+
+    <aside class="menu">
+
+        <div class="marca">
+            <span class="marca-icone">H</span>
+
+            <div>
+                <strong>HomeRisk</strong>
+                <small>Risco e mercado imobiliário</small>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">Dashboard</a>
+
+            <a href="imoveis.html">Imóveis</a>
+
+            <a href="risco-regiao.html" class="ativo">
+                Risco da região
+            </a>
+
+            <a href="mercado.html">Mercado imobiliário</a>
+
+            <a href="sobre.html">Sobre</a>
+        </nav>
+
+    </aside>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+
+    <main class="conteudo">
+
+        <header class="topo">
+            <h1>Risco da região</h1>
+
+            <p>
+                Analise os indicadores e as condições
+                das regiões e bairros.
+            </p>
+        </header>
+
+        <!-- FILTROS -->
+
+        <section class="filtros" aria-label="Filtros regionais">
+
+            <label>
+                Região
+
+                <select id="filtro-regiao">
+                    <option value="">Todas as regiões</option>
+                    <option value="Centro">Centro</option>
+                    <option value="Norte">Norte</option>
+                    <option value="Sul">Sul</option>
+                    <option value="Leste">Leste</option>
+                    <option value="Oeste">Oeste</option>
+                </select>
+            </label>
+
+            <label>
+                Bairro
+
+                <select id="filtro-bairro">
+                    <option value="">Todos os bairros</option>
+                </select>
+            </label>
+
+        </section>
+
+        <!-- INDICADORES -->
+
+       
+    <section class="indicadores">
+
+        <article class="indicador">
+            <span>Bairros analisados</span>
+            <strong id="total-regioes">0</strong>
+        </article>
+
+        <article class="indicador">
+            <span>Índice médio de risco</span>
+            <strong id="risco-medio">0/100</strong>
+        </article>
+
+        <article class="indicador">
+            <span>Bairro com menor risco</span>
+            <strong id="menor-risco">-</strong>
+        </article>
+
+        <article class="indicador">
+            <span>Bairro com maior risco</span>
+            <strong id="maior-risco">-</strong>
+        </article>
+
+    </section>
+
+
+
+<!-- COMPARATIVO DE RISCO -->
+
+<section class="lista-imoveis-pagina">
+
+    <div class="titulo-secao">
+        <div>
+            <h2>Comparativo de risco</h2>
+            <p>
+                Consulte os índices por zona, bairro ou compare todos os bairros.
+            </p>
+        </div>
+    </div>
+
+    <div class="controles-grafico">
+
+        <button
+            type="button"
+            id="visao-zona"
+            class="opcao-grafico ativo"
+            aria-pressed="true">
+            Por zona
+        </button>
+
+        <button
+            type="button"
+            id="visao-bairro"
+            class="opcao-grafico"
+            aria-pressed="false">
+            Por bairro
+        </button>
+
+        <button
+            type="button"
+            id="visao-comparativo"
+            class="opcao-grafico"
+            aria-pressed="false">
+            Comparativo
+        </button>
+
+        
+    <button
+        type="button"
+        id="visao-evolucao"
+        class="opcao-grafico"
+        aria-pressed="false">
+        Evolução
+    </button>
+
+
+    </div>
+
+    <!-- GRÁFICO -->
+
+    <div class="grafico-regioes" id="grafico-container">
+        <canvas id="grafico-risco-regioes"></canvas>
+    </div>
+
+    
+    <div class="grafico-regioes" id="evolucao-container" style="display: none;">
+        <canvas id="grafico-evolucao-risco"></canvas>
+    </div>
+
+
+    <!-- TABELA -->
+
+    <div class="tabela-container" id="tabela-container" style="display: none;">
+
+        <table class="tabela-risco">
+
+            <thead>
+                <tr>
+                    <th>Bairro</th>
+                    <th>Zona</th>
+                    <th>Índice de risco</th>
+                    <th>Classificação</th>
+                </tr>
+            </thead>
+
+            <tbody id="tabela-comparativo"></tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- MAPA DE RISCO POR BAIRRO -->
+<section class="lista-imoveis-pagina secao-mapa-risco" id="secao-mapa-risco">
+
+    <div class="titulo-secao">
+        <div>
+            <h2>Mapa de risco por bairro</h2>
+            <p>
+                Visualize a localização aproximada dos bairros analisados e consulte
+                o índice demonstrativo de cada um.
+            </p>
+        </div>
+    </div>
+
+    <div class="filtros filtros-mapa" aria-label="Filtros do mapa de imóveis">
+        <label>
+            Região
+            <select id="filtro-mapa-regiao">
+                <option value="">Todas as regiões</option>
+                <option value="Centro">Centro</option>
+                <option value="Norte">Norte</option>
+                <option value="Sul">Sul</option>
+                <option value="Leste">Leste</option>
+                <option value="Oeste">Oeste</option>
+            </select>
+        </label>
+
+        <label>
+            Bairro
+            <select id="filtro-mapa-bairro">
+                <option value="">Todos os bairros</option>
+            </select>
+        </label>
+    </div>
+    <p class="orientacao-mapa">Selecione um marcador para consultar o imóvel disponível naquele bairro.</p>
+
+    <div class="legenda-mapa" aria-label="Legenda dos níveis de risco">
+        <span><i class="ponto-legenda risco-baixo"></i> Risco baixo</span>
+        <span><i class="ponto-legenda risco-moderado"></i> Risco moderado</span>
+        <span><i class="ponto-legenda risco-alto"></i> Risco alto</span>
+    </div>
+
+    <div
+        id="mapa-risco-regiao"
+        role="region"
+        aria-label="Mapa interativo dos bairros e imóveis disponíveis"
+    ></div>
+
+    <p class="aviso-mapa">
+        Os marcadores mostram a localização aproximada do bairro, não o endereço exato do imóvel.
+        Os imóveis, índices e classificações são demonstrativos e não representam dados oficiais.
+    </p>
+</section>
+
+
+<!-- RISCOS DE INFRAESTRUTURA -->
+
+<section class="lista-imoveis-pagina">
+
+    <div class="titulo-secao">
+        <div>
+            <h2>Riscos de infraestrutura da região</h2>
+            <p>
+                Acompanhe os principais problemas, os picos de relatos
+                e o volume registrado em cada categoria.
+            </p>
+        </div>
+    </div>
+
+
+<!-- FILTROS -->
+<div class="filtros filtros-infraestrutura" aria-label="Filtros de infraestrutura">
+
+    <label>
+        Zona
+        <select id="filtro-zona-risco">
+            <option value="">Todas as zonas</option>
+            <option value="Centro">Centro</option>
+            <option value="Norte">Norte</option>
+            <option value="Sul">Sul</option>
+            <option value="Leste">Leste</option>
+            <option value="Oeste">Oeste</option>
+        </select>
+    </label>
+
+    <label>
+        Bairro
+        <select id="filtro-bairro-risco">
+            <option value="">Todos os bairros</option>
+        </select>
+    </label>
+
+    <label>
+        Período
+        <select id="filtro-periodo-risco">
+            <option value="6">Últimos 6 meses</option>
+            <option value="3">Últimos 3 meses</option>
+            <option value="12">Últimos 12 meses</option>
+        </select>
+    </label>
+
+    <div class="painel-evolucao-relatos">
+
+        <div class="acao-relatorio">
+            <button type="button" id="botao-relatorio" class="opcao-grafico">
+                <span>▤</span> Ver documento
+            </button>
+        </div>
+
+        <div class="indicador-evolucao">
+            <span>Variação dos relatos</span>
+            <strong id="variacao-relatos">—</strong>
+        </div>
+
+        <div class="indicador-evolucao">
+            <span>Categoria com mais relatos</span>
+            <strong id="categoria-mais-relatos">—</strong>
+            <small id="total-categoria-relatos">—</small>
+        </div>
+
+        <div class="indicador-evolucao">
+            <span>Classificação</span>
+            <strong id="classificacao-relatos">—</strong>
+        </div>
+
+    </div>
+
+</div>
+
+
+</div>
+ 
+
+</div>
+
+<!-- PRINCIPAIS FATORES DE RISCO -->
+
+<div class="painel-fatores-risco">
+
+    <div class="titulo-secao">
+        <div>
+            <h3>Principais fatores de risco</h3>
+            <p>
+                Identifique os fatores que mais contribuem
+                para o índice de risco da localidade.
+            </p>
+        </div>
+    </div>
+
+    <div id="lista-fatores-risco" class="lista-fatores-risco">
+        <!-- Os fatores serão inseridos pelo JavaScript -->
+    </div>
+
+</div>
+
+
+    <!-- PICO DE RELATOS -->
+
+    <div class="grafico-regioes" id="container-pico-relatos">
+        <div class="titulo-secao">
+            <div>
+                <h3>Pico de relatos por mês</h3>
+                <p>
+                    Identifique quando cada categoria apresentou
+                    maior volume de registros.
+                </p>
+            </div>
+        </div>
+
+        <canvas id="grafico-pico-relatos"></canvas>
+    </div>
+
+    <!-- TOTAL POR CATEGORIA -->
+
+    <div class="grafico-regioes" id="container-total-categorias">
+        <div class="titulo-secao">
+            <div>
+                <h3>Total de relatos por categoria</h3>
+                <p>
+                    Compare o volume acumulado de problemas
+                    na localidade selecionada.
+                </p>
+            </div>
+        </div>
+
+        <canvas id="grafico-total-categorias"></canvas>
+    </div>
+
+</section>
+
+
+
+<!-- JANELA DO RELATÓRIO -->
+
+<div id="modal-relatorio" class="modal-relatorio" style="display: none;">
+
+    <div class="conteudo-relatorio">
+
+        <div class="cabecalho-relatorio">
+            <div>
+                <h2>Relatório HomeRisk</h2>
+                <p id="relatorio-localidade">Análise da localidade</p>
+            </div>
+
+            <button type="button" id="fechar-relatorio">
+                Fechar
+            </button>
+        </div>
+
+        
+<!-- FILTROS DO DOCUMENTO -->
+
+<div class="filtros filtros-documento">
+
+    <label>
+        Zona
+
+        <select id="relatorio-filtro-zona">
+            <option value="">Todas as zonas</option>
+            <option value="Centro">Centro</option>
+            <option value="Norte">Norte</option>
+            <option value="Sul">Sul</option>
+            <option value="Leste">Leste</option>
+            <option value="Oeste">Oeste</option>
+        </select>
+    </label>
+
+    <label>
+        Bairro
+
+        <select id="relatorio-filtro-bairro">
+            <option value="">Todos os bairros</option>
+        </select>
+    </label>
+
+    <label>
+        Período
+
+        <select id="relatorio-filtro-periodo">
+            <option value="3">Últimos 3 meses</option>
+            <option value="6" selected>Últimos 6 meses</option>
+            <option value="12">Últimos 12 meses</option>
+        </select>
+    </label>
+
+</div>
+
+
+        <div id="conteudo-relatorio"></div>
+
+        <div class="acoes-relatorio">
+            <button type="button" id="imprimir-relatorio">
+                Imprimir documento
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+
+        <p class="aviso">
+            Dados fictícios de protótipo.
+            Os índices são demonstrativos e não representam
+            uma avaliação oficial de segurança ou da qualidade
+            de vida de uma região.
+        </p>
+
+    </main>
+
+    
+
+<!-- BOTÃO FLUTUANTE: ENTENDA OS INDICADORES -->
+<div class="ajuda-indicadores">
+    <button
+        type="button"
+        id="botao-ajuda-indicadores"
+        aria-expanded="false"
+        aria-controls="painel-ajuda-indicadores"
+    >
+        <span class="icone-ajuda">i</span>
+        Entenda os indicadores
+    </button>
+
+    <div
+        id="painel-ajuda-indicadores"
+        class="painel-ajuda-indicadores"
+        hidden
+    >
+        <div class="cabecalho-ajuda">
+            <strong>Entenda os indicadores</strong>
+            <button
+                type="button"
+                id="fechar-ajuda-indicadores"
+                aria-label="Fechar explicações"
+            >
+                &times;
+            </button>
+        </div>
+
+        <div class="conteudo-ajuda">
+            <details>
+                <summary>Saneamento</summary>
+                <p>Avalia abastecimento de água, coleta e tratamento de esgoto e drenagem.</p>
+            </details>
+
+            <details>
+                <summary>Infraestrutura</summary>
+                <p>Considera condições elétricas e urbanas, como iluminação, vias e estruturas públicas.</p>
+            </details>
+
+            <details>
+                <summary>Segurança</summary>
+                <p>Representa os indicadores utilizados para avaliar as condições de segurança da localidade.</p>
+            </details>
+
+            <details>
+                <summary>Transporte</summary>
+                <p>Considera mobilidade, acesso ao transporte público e condições de deslocamento.</p>
+            </details>
+
+            <details>
+                <summary>Vulnerabilidade</summary>
+                <p>Representa fatores sociais e territoriais que podem aumentar a exposição da população a riscos.</p>
+            </details>
+
+            <details>
+                <summary>Ocorrências</summary>
+                <p>Reúne registros de eventos e problemas identificados na localidade.</p>
+            </details>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+></script>
+
+<script src="js/dados.js"></script>
+<script src="js/script-risco-regiao.js"></script>
+
+
+
+</body>
+</html>

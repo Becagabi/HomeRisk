@@ -1,0 +1,9 @@
+﻿id_imovel;nome_imovel;endereco_demonstrativo;bairro;regiao;tipo_imovel;area_m2;latitude_aproximada;longitude_aproximada;valor_venda_brl;valor_aluguel_brl;saneamento_nota;infraestrutura_nota;transporte_nota;seguranca_nota;vulnerabilidade_nota;ocorrencias_nota_demonstrativa;risco_eletrico;risco_hidraulico;risco_estrutural;risco_infiltracao;historico_indice_periodo_1_a_4;indice_risco;nivel_risco;ajuste_hipotetico_pct;valor_venda_ajustado_brl
+1;Apto 101;Rua X, 101;Bom Retiro;Centro;Apartamento;55;-23.532;-46.632;400000;2500;70;65;90;55;60;60;40;50;30;60;38, 40, 39, 41;41;Moderado;0.05;380000.0
+2;Apto 204;Rua X, 204;Pinheiros;Oeste;Apartamento;70;-23.567;-46.702;450000;2800;85;80;75;70;40;30;20;25;15;20;28, 27, 27, 26;28;Baixo;0;450000
+3;Apto 312;Rua X, 312;Itaquera;Leste;Apartamento;48;-23.54;-46.457;350000;2000;30;30;50;30;85;85;70;75;65;80;65, 68, 70, 73;72;Alto;0.1;315000.0
+4;Apto 405;Rua X, 405;Moema;Sul;Apartamento;85;-23.6;-46.665;720000;4200;90;85;70;80;25;20;15;15;10;20;21, 20, 20, 19;20;Baixo;0;720000
+5;Casa 12;Rua X, 12;Vila Maria;Norte;Casa;110;-23.51;-46.585;520000;3100;60;55;65;50;65;55;50;55;45;60;44, 46, 47, 49;50;Moderado;0.05;494000.0
+6;Apto 600;Rua X, 600;Santana;Norte;Apartamento;40;-23.5;-46.628;330000;1900;75;70;85;65;50;45;35;30;25;40;36, 35, 35, 34;34;Baixo;0;330000
+7;Casa 08;Rua X, 8;Capão Redondo;Sul;Casa;90;-23.66;-46.78;280000;1500;35;40;45;35;80;80;75;70;70;80;62, 64, 66, 68;68;Moderado;0.05;266000.0
+8;Apto 506;Rua X, 506;Tucuruvi;Norte;Apartamento;52;-23.48;-46.603;380000;2300;65;60;75;60;55;50;45;40;35;50;43, 42, 42, 41;42;Moderado;0.05;361000.0

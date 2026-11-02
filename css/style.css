@@ -1,0 +1,2859 @@
+:root {
+    --fundo: #edf1f4;
+    --superficie: #ffffff;
+    --texto: #1c2733;
+    --texto-suave: #5b6b7a;
+    --borda: #d5dde4;
+    --menu: #16324a;
+    --menu-texto: #c9d6e2;
+    --destaque: #1f7a8c;
+    --critica: #b3261e;
+    --alta: #d9822b;
+    --media: #c9a227;
+    --baixa: #3c8d5a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--fundo);
+    color: var(--texto);
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 240px 1fr;
+}
+
+/*Parte menu canto esquerdo*/
+
+.menu {
+    background-color: var(--menu);
+    color: var(--menu-texto);
+    padding: 24px 16px;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+    color: white;
+}
+
+.marca small {
+    display: block;
+    color: var(--menu-texto);
+    font-size: 0.8rem;
+}
+
+.marca-icone {
+    display: grid;
+    place-items: center;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 10px;
+    background-color: var(--destaque);
+
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.menu nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.menu a {
+    color: var(--menu-texto);
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 12px;
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.menu a.ativo {
+    background-color: rgba(255, 255, 255, 0.14);
+    color: white;
+}
+
+/*Parte do conteudo*/
+
+.conteudo {
+    padding: 32px;
+    max-width: 1200px;
+}
+
+.topo h1 {
+    font-size: 1.6rem;
+}
+
+.topo p {
+    color: var(--texto-suave);
+    margin-top: 4px;
+}
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 24px 0;
+}
+
+
+.filtros label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.85rem;
+    color: var(--texto-suave);
+}
+
+.filtros select {
+    min-width: 150px;
+    padding: 8px 10px;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    background-color: var(--superficie);
+    color: var(--texto);
+    font: inherit;
+}
+
+/* ===== INDICADORES ===== */
+
+.indicadores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.indicador {
+    background-color: var(--superficie);
+    border: 1px solid var(--borda);
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.indicador span {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--texto-suave);
+}
+
+.indicador strong {
+    display: block;
+    margin-top: 6px;
+    font-size: 1.8rem;
+}
+
+.indicador small {
+    color: var(--texto-suave);
+}
+
+.indicador.critico {
+    border-left: 5px solid var(--critica);
+}
+
+.indicador.critico strong {
+    color: var(--critica);
+}
+
+.indicador.destaque {
+    background-color: var(--menu);
+    border-color: var(--menu);
+    color: white;
+}
+
+.indicador.destaque span,
+.indicador.destaque small {
+    color: var(--menu-texto);
+}
+
+.indicador.destaque strong {
+    font-size: 2.4rem;
+}
+
+/* ===== GRÁFICOS ===== */
+
+.graficos {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.grafico {
+    background-color: var(--superficie);
+    border: 1px solid var(--borda);
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.grafico h2 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+.grafico-area {
+    height: 240px;
+    display: grid;
+    place-items: center;
+    border: 1px dashed var(--borda);
+    border-radius: 10px;
+    color: var(--texto-suave);
+    position: relative;
+}
+
+.grafico.grande {
+    grid-column: span 2;
+}
+
+.grafico canvas {
+    max-width: 100%;
+}
+
+.card-apartamento {
+    background: var(--superficie);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    padding: 16px;
+}
+
+#lista-apartamentos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.card-apartamento.risco-critico {
+    border-left: 5px solid var(--critica);
+}
+
+.card-apartamento.risco-alto {
+    border-left: 5px solid var(--alta);
+}
+
+.card-apartamento.risco-medio {
+    border-left: 5px solid var(--media);
+}
+
+.card-apartamento.risco-baixo {
+    border-left: 5px solid var(--baixa);
+}
+
+.status-pendente {
+    color: var(--critica);
+    font-weight: 600;
+}
+
+.status-andamento {
+    color: var(--alta);
+    font-weight: 600;
+}
+
+.status-resolvida {
+    color: var(--baixa);
+    font-weight: 600;
+}
+
+.risco-info {
+    margin: 14px 0;
+}
+
+.risco-texto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.risco-texto span {
+    font-size: 0.85rem;
+    color: var(--texto-suave);
+}
+
+.risco-texto strong {
+    font-size: 0.9rem;
+}
+
+.barra-risco {
+    width: 100%;
+    height: 8px;
+    background: var(--borda);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.barra-risco-preenchida {
+    height: 100%;
+    background: var(--destaque);
+    border-radius: 999px;
+}
+
+.detalhes-topo {
+    margin-bottom: 20px;
+}
+
+.detalhes-topo h3 {
+    font-size: 1.3rem;
+}
+
+.detalhes-topo p {
+    margin-top: 4px;
+    color: var(--texto-suave);
+}
+
+.detalhes-indicadores {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.detalhe-item {
+    background: var(--fundo);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    padding: 14px;
+}
+.detalhe-item span {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--texto-suave);
+    margin-bottom: 6px;
+}
+
+.detalhe-item strong {
+    font-size: 1rem;
+}
+
+.detalhe-categoria {
+    margin-top: 16px;
+    padding: 14px;
+    background: var(--fundo);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+}
+
+.detalhe-categoria span {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--texto-suave);
+    margin-bottom: 6px;
+}
+
+.lista-ocorrencias {
+    margin-top: 20px;
+}
+
+.lista-ocorrencias h4 {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+.ocorrencia-detalhe {
+    padding: 14px;
+    margin-bottom: 10px;
+    background: var(--fundo);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+}
+.ocorrencia-detalhe p {
+    margin-top: 5px;
+    font-size: 0.85rem;
+    color: var(--texto-suave);
+}
+
+.nivel-baixo {
+    color: #3c8d5a;
+}
+
+.nivel-moderado {
+    color: #c9a227;
+}
+
+.nivel-alto {
+    color: #b3261e;
+}
+
+/* ===== HOMERISK 2.0 (novo) ===== */
+
+.apartamentos-bloco,
+.detalhes-apartamento {
+    margin-bottom: 24px;
+}
+
+.apartamentos-bloco h2,
+.detalhes-apartamento h2 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+.aviso {
+    margin-top: 24px;
+    font-size: 0.8rem;
+    color: var(--texto-suave);
+}
+
+.apartamentos-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.apartamentos-cabecalho h2 {
+    margin-bottom: 4px;
+}
+
+.apartamentos-cabecalho p {
+    color: var(--texto-suave);
+    font-size: 0.85rem;
+}
+
+.ver-todos {
+    color: var(--destaque);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.ver-todos:hover {
+    text-decoration: underline;
+}
+
+
+/* PESQUISA */
+
+.pesquisa-imoveis {
+    margin-bottom: 14px;
+}
+
+.pesquisa-imoveis input {
+    width: 100%;
+    padding: 11px 14px;
+
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+
+    background: var(--superficie);
+    color: var(--texto);
+
+    font: inherit;
+}
+
+.pesquisa-imoveis input:focus {
+    outline: none;
+    border-color: var(--destaque);
+}
+
+
+/* LISTA */
+
+
+/* LINHA DO IMÓVEL */
+
+.card-apartamento {
+    background: var(--superficie);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    padding: 14px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.card-apartamento:hover {
+    border-color: var(--destaque);
+    transform: translateY(-2px);
+}
+
+.card-apartamento h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.card-apartamento p {
+    margin-top: 5px;
+    font-size: 0.85rem;
+    color: var(--texto-suave);
+}
+
+
+/* BOTÃO */
+
+.botao-imoveis {
+    display: block;
+
+    width: fit-content;
+
+    margin: 16px auto 0;
+
+    padding: 9px 16px;
+
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+
+    color: var(--texto);
+
+    text-decoration: none;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    background: var(--superficie);
+}
+
+.botao-imoveis:hover {
+    border-color: var(--destaque);
+    color: var(--destaque);
+}
+
+/* =====================================================
+   PÁGINA DE IMÓVEIS
+===================================================== */
+
+.pesquisa-pagina {
+    margin: 24px 0 16px;
+}
+
+.pesquisa-pagina label {
+    display: block;
+    margin-bottom: 6px;
+
+    font-size: 0.85rem;
+    color: var(--texto-suave);
+}
+
+.pesquisa-pagina input {
+    width: 100%;
+
+    padding: 11px 14px;
+
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+
+    background: var(--superficie);
+    color: var(--texto);
+
+    font: inherit;
+}
+
+.pesquisa-pagina input:focus {
+    outline: none;
+    border-color: var(--destaque);
+}
+
+
+/* RESUMO */
+
+.lista-imoveis-pagina {
+    margin-top: 24px;
+}
+
+.titulo-secao {
+    margin-bottom: 14px;
+}
+
+.titulo-secao h2 {
+    font-size: 1.1rem;
+}
+
+.titulo-secao p {
+    margin-top: 4px;
+
+    color: var(--texto-suave);
+    font-size: 0.85rem;
+}
+
+
+/* LISTA DE IMÓVEIS */
+
+.lista-imoveis-completa {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* CARD */
+
+.card-imovel {
+    background: var(--superficie);
+
+    border: 1px solid var(--borda);
+    border-radius: 14px;
+
+    padding: 16px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.card-imovel:hover {
+    border-color: var(--destaque);
+
+    transform: translateY(-1px);
+}
+
+
+/* TOPO DO CARD */
+
+.card-imovel-topo {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 16px;
+}
+
+.card-imovel-topo h3 {
+    font-size: 1rem;
+}
+
+.card-imovel-topo p {
+    margin-top: 4px;
+
+    color: var(--texto-suave);
+
+    font-size: 0.85rem;
+}
+
+
+/* NÍVEL */
+
+.card-imovel-topo span {
+    padding: 5px 9px;
+
+    border-radius: 999px;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+
+/* INFORMAÇÕES */
+
+.card-imovel-info {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-top: 16px;
+
+    padding-top: 14px;
+
+    border-top: 1px solid var(--borda);
+}
+
+.card-imovel-info span {
+    display: block;
+
+    color: var(--texto-suave);
+
+    font-size: 0.75rem;
+
+    margin-bottom: 4px;
+}
+
+.card-imovel-info strong {
+    font-size: 0.9rem;
+}
+
+
+/* RODAPÉ */
+
+.card-imovel-rodape {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 16px;
+}
+
+.card-imovel-rodape span {
+    color: var(--texto-suave);
+
+    font-size: 0.8rem;
+}
+
+.card-imovel-rodape button {
+    border: 1px solid var(--borda);
+
+    background: var(--superficie);
+
+    color: var(--destaque);
+
+    padding: 7px 12px;
+
+    border-radius: 8px;
+
+    font: inherit;
+
+    font-size: 0.8rem;
+
+    cursor: pointer;
+}
+
+.card-imovel-rodape button:hover {
+    border-color: var(--destaque);
+}
+
+
+/* CORES DOS NÍVEIS */
+
+.nivel-baixo {
+    color: var(--baixa);
+    background: rgba(60, 141, 90, 0.1);
+}
+
+.nivel-moderado {
+    color: var(--media);
+    background: rgba(201, 162, 39, 0.1);
+}
+
+.nivel-alto {
+    color: var(--critica);
+    background: rgba(179, 38, 30, 0.1);
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 800px) {
+
+    .card-imovel-info {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .card-imovel-topo {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .card-imovel-rodape {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
+
+/* =========================================
+   DETALHES EXPANSÍVEIS DO IMÓVEL
+========================================= */
+
+.detalhes-imovel {
+    display: none;
+
+    margin-top: 18px;
+    padding-top: 18px;
+
+    border-top: 1px solid var(--borda);
+}
+
+
+/* Quando o imóvel estiver aberto */
+
+.card-imovel.aberto .detalhes-imovel {
+    display: block;
+}
+
+
+/* Conteúdo dos detalhes */
+
+.detalhes-imovel-conteudo {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-bottom: 16px;
+}
+
+
+.detalhes-imovel-conteudo > div {
+    background: var(--fundo);
+
+    border: 1px solid var(--borda);
+
+    border-radius: 10px;
+
+    padding: 12px;
+}
+
+
+.detalhes-imovel-conteudo span {
+    display: block;
+
+    font-size: 0.75rem;
+
+    color: var(--texto-suave);
+
+    margin-bottom: 5px;
+}
+
+
+.detalhes-imovel-conteudo strong {
+    font-size: 0.9rem;
+}
+
+
+/* Blocos inferiores */
+
+.detalhes-imovel-valor,
+.detalhes-imovel-regiao {
+
+    margin-top: 12px;
+
+    padding: 14px;
+
+    background: var(--fundo);
+
+    border: 1px solid var(--borda);
+
+    border-radius: 10px;
+}
+
+
+.detalhes-imovel h4 {
+
+    font-size: 0.9rem;
+
+    margin-bottom: 10px;
+}
+
+
+.detalhes-imovel p {
+
+    margin-top: 6px;
+
+    font-size: 0.85rem;
+
+    color: var(--texto-suave);
+}
+
+
+/* Botão */
+
+.botao-detalhes {
+
+    cursor: pointer;
+
+    border: 1px solid var(--borda);
+
+    background: var(--superficie);
+
+    color: var(--texto);
+
+    border-radius: 8px;
+
+    padding: 7px 12px;
+
+    font: inherit;
+
+    font-size: 0.8rem;
+
+    font-weight: 600;
+}
+
+
+.botao-detalhes:hover {
+
+    border-color: var(--destaque);
+
+    color: var(--destaque);
+
+}
+
+
+/* Gráfico da página de risco regional */
+
+.grafico-regioes {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    padding: 16px;
+    background: white;
+    border-radius: 12px;
+}
+
+
+/* Indicadores mais compactos na página de risco */
+
+.indicadores {
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.indicadores .indicador {
+    padding: 10px 14px;
+    min-height: 0;
+}
+
+.indicadores .indicador span {
+    font-size: 13px;
+}
+
+.indicadores .indicador strong {
+    font-size: 15px;
+}
+
+
+/* Alternância da visualização do gráfico */
+
+
+.controles-grafico {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 18px 0;
+}
+
+.opcao-grafico {
+    padding: 9px 16px;
+    border: 1px solid #d5dee8;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #334155;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.opcao-grafico:hover {
+    background: #f1f5f9;
+}
+
+.opcao-grafico.ativo {
+    background: #19364d;
+    border-color: #19364d;
+    color: #ffffff;
+}
+
+
+.grafico-regioes {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    padding: 12px;
+    background: #ffffff;
+    border-radius: 12px;
+}
+
+
+#painel-analise {
+    margin-top: 24px;
+}
+
+#painel-analise #analise-barras {
+    margin-top: 20px;
+}
+
+#painel-analise #analise-barras h3 {
+    margin-bottom: 16px;
+}
+
+#painel-analise #analise-indice,
+#painel-analise #analise-nivel {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+#painel-analise .risco-info {
+    margin-bottom: 16px;
+}
+
+
+.resumo-analise {
+    margin-top: 24px;
+    padding: 20px;
+    background: #f5f8fc;
+    border-radius: 12px;
+}
+
+.resumo-analise h3 {
+    margin-bottom: 14px;
+}
+
+.resumo-analise p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.resumo-analise .nota-analise {
+    margin-top: 16px;
+    font-size: 12px;
+    color: #64748b;
+}
+
+
+.tabela-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+}
+
+.tabela-risco {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.tabela-risco th,
+.tabela-risco td {
+    padding: 16px;
+    border-bottom: 1px solid #e8edf3;
+}
+
+.tabela-risco th {
+    background: #f5f8fc;
+    color: #475569;
+    font-size: 13px;
+}
+
+.tabela-risco td {
+    color: #334155;
+    font-size: 14px;
+}
+
+.tabela-risco tbody tr:hover {
+    background: #f8fafc;
+}
+
+
+
+.tabela-container {
+    width: 100%;
+    overflow-x: auto;
+    background: #ffffff;
+    border-radius: 12px;
+}
+
+.tabela-risco {
+    width: 100%;
+    min-width: 520px;
+    border-collapse: collapse;
+}
+
+.tabela-risco th,
+.tabela-risco td {
+    padding: 15px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e8edf3;
+    white-space: nowrap;
+}
+
+.tabela-risco th {
+    background: #f5f8fc;
+    color: #475569;
+    font-weight: 600;
+}
+
+.tabela-risco tbody tr:hover {
+    background: #f8fafc;
+}
+
+.tabela-risco tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+
+.grafico-regioes {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    padding: 12px;
+    background: #ffffff;
+    border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+    .grafico-regioes {
+        height: 260px;
+        padding: 8px;
+    }
+
+    .controles-grafico {
+        gap: 6px;
+    }
+
+    .opcao-grafico {
+        padding: 8px 11px;
+        font-size: 12px;
+    }
+}
+
+.acao-relatorio {
+    display: flex;
+    align-items: flex-end;
+}
+
+.acao-relatorio button {
+    min-height: 38px;
+    white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+    .acao-relatorio {
+        width: 100%;
+    }
+
+    .acao-relatorio button {
+        width: 100%;
+    }
+}
+
+#grafico-pico-relatos,
+#grafico-total-categorias {
+    width: 100%;
+    max-height: 340px;
+}
+
+.grafico-regioes {
+    position: relative;
+    min-height: 340px;
+}
+
+
+/* =========================================
+   ESPAÇAMENTO DOS GRÁFICOS DE INFRAESTRUTURA
+========================================= */
+
+#container-pico-relatos,
+#container-total-categorias {
+    position: relative;
+    width: 100%;
+    height: 430px;
+    min-height: 430px;
+    padding: 20px;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 14px;
+}
+
+/* Espaço interno para os gráficos */
+
+#container-pico-relatos canvas,
+#container-total-categorias canvas {
+    width: 100% !important;
+    height: 330px !important;
+    max-height: none;
+}
+
+/* Evita que o aviso fique grudado nos gráficos */
+
+.aviso {
+    display: block;
+    clear: both;
+    margin-top: 30px;
+    padding-top: 15px;
+}
+
+/* Ajuste para telas menores */
+
+@media (max-width: 600px) {
+    #container-pico-relatos,
+    #container-total-categorias {
+        height: 380px;
+        min-height: 380px;
+        padding: 12px;
+        margin-bottom: 20px;
+    }
+
+    #container-pico-relatos canvas,
+    #container-total-categorias canvas {
+        height: 290px !important;
+    }
+}
+
+
+/* =========================================
+   RELATÓRIO HOMERISK
+========================================= */
+
+.modal-relatorio {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(15, 30, 45, 0.65);
+    padding: 24px;
+    overflow-y: auto;
+}
+
+.conteudo-relatorio {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 32px;
+    background: #ffffff;
+    border-radius: 12px;
+    color: #19364b;
+}
+
+.cabecalho-relatorio {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    border-bottom: 1px solid #dce3e9;
+    padding-bottom: 18px;
+    margin-bottom: 24px;
+}
+
+.cabecalho-relatorio h2 {
+    margin: 0 0 6px;
+}
+
+.cabecalho-relatorio p {
+    margin: 0;
+    color: #647789;
+}
+
+.conteudo-relatorio h3 {
+    margin-top: 24px;
+}
+
+.resumo-relatorio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin: 20px 0;
+}
+
+.item-resumo-relatorio {
+    background: #f0f4f7;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.item-resumo-relatorio span {
+    display: block;
+    color: #647789;
+    font-size: 13px;
+}
+
+.item-resumo-relatorio strong {
+    display: block;
+    margin-top: 8px;
+    font-size: 22px;
+}
+
+.tabela-relatorio {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+.tabela-relatorio th,
+.tabela-relatorio td {
+    padding: 11px;
+    border-bottom: 1px solid #dce3e9;
+    text-align: left;
+}
+
+.aviso-relatorio {
+    margin-top: 24px;
+    padding: 12px;
+    background: #fff6df;
+    border-radius: 8px;
+    color: #75591c;
+    font-size: 13px;
+}
+
+.acoes-relatorio {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+
+@media (max-width: 600px) {
+    .conteudo-relatorio {
+        padding: 18px;
+    }
+
+    .resumo-relatorio {
+        grid-template-columns: 1fr;
+    }
+
+    .cabecalho-relatorio {
+        flex-direction: column;
+    }
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #modal-relatorio,
+    #modal-relatorio .conteudo-relatorio,
+    #modal-relatorio .conteudo-relatorio * {
+        visibility: visible;
+    }
+
+    #modal-relatorio {
+        display: block !important;
+        position: absolute;
+        inset: 0;
+        padding: 0;
+        background: #ffffff;
+        overflow: visible;
+    }
+
+    .conteudo-relatorio {
+        max-width: none;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .cabecalho-relatorio button,
+    .acoes-relatorio {
+        display: none !important;
+    }
+}
+
+
+/* FILTROS DO DOCUMENTO */
+
+.filtros-documento {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 18px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dce3e9;
+}
+
+.filtros-documento label {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    min-width: 150px;
+    color: #647789;
+    font-size: 13px;
+}
+
+.filtros-documento select {
+    min-height: 38px;
+    padding: 8px 12px;
+    border: 1px solid #dce3e9;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #19364b;
+}
+
+@media print {
+    .filtros-documento {
+        display: none !important;
+    }
+}
+
+
+
+/* =========================================
+   ORGANIZAÇÃO VISUAL DO RELATÓRIO
+========================================= */
+
+.secao-relatorio {
+    margin-bottom: 30px;
+}
+
+.secao-relatorio h3 {
+    font-size: 17px;
+    color: #19364b;
+    margin: 0 0 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e2e8ed;
+}
+
+/* Identificação */
+
+
+/* Identificação da localidade */
+
+.identificacao-relatorio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.identificacao-relatorio div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px 12px;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+}
+
+.identificacao-relatorio span {
+    color: #777777;
+    font-size: 11px;
+}
+
+.identificacao-relatorio strong {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Indicadores gerais */
+
+.resumo-relatorio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 0;
+}
+
+.item-resumo-relatorio {
+    padding: 12px 14px;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+}
+
+.item-resumo-relatorio span {
+    color: #777777;
+    font-size: 11px;
+}
+
+.item-resumo-relatorio strong {
+    display: block;
+    margin-top: 5px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Tabelas */
+
+.tabela-relatorio {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e5ebf0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabela-relatorio th {
+    background: #edf2f6;
+    color: #19364b;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.tabela-relatorio td {
+    color: #46596b;
+    font-size: 14px;
+}
+
+.tabela-relatorio th,
+.tabela-relatorio td {
+    padding: 13px 16px;
+    border-bottom: 1px solid #e8edf1;
+    text-align: left;
+}
+
+.tabela-relatorio th:last-child,
+.tabela-relatorio td:last-child {
+    text-align: right;
+}
+
+.tabela-relatorio tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.tabela-relatorio tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+    .identificacao-relatorio,
+    .resumo-relatorio {
+        grid-template-columns: 1fr;
+    }
+
+    .conteudo-relatorio {
+        padding: 18px;
+    }
+
+    .tabela-relatorio th,
+    .tabela-relatorio td {
+        padding: 10px;
+    }
+}
+
+/* Impressão */
+
+@media print {
+    .secao-relatorio {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+}
+
+
+.analise-relatorio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.item-analise-relatorio {
+    padding: 12px 14px;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+}
+
+.item-analise-relatorio span {
+    display: block;
+    color: #777;
+    font-size: 11px;
+}
+
+.item-analise-relatorio strong {
+    display: block;
+    margin-top: 6px;
+    color: #333;
+    font-size: 15px;
+}
+
+.item-analise-relatorio p {
+    margin: 5px 0 0;
+    color: #777;
+    font-size: 12px;
+}
+
+.conclusao-relatorio {
+    margin-top: 12px;
+    padding: 14px;
+    background: #f7f8fa;
+    border-left: 3px solid #527da8;
+}
+
+.conclusao-relatorio h4 {
+    margin: 0 0 6px;
+    font-size: 13px;
+}
+
+.conclusao-relatorio p {
+    margin: 0;
+    color: #555;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+.painel-evolucao-relatos {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.indicador-evolucao {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 9px 13px;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    min-width: 125px;
+}
+
+.indicador-evolucao span {
+    color: #777;
+    font-size: 11px;
+}
+
+.indicador-evolucao strong {
+    color: #333;
+    font-size: 15px;
+}
+
+
+/* Classificação da evolução dos relatos */
+
+.evolucao-aumento {
+    color: #c0392b !important;
+}
+
+.evolucao-reducao {
+    color: #27845b !important;
+}
+
+.evolucao-estavel {
+    color: #8a6d3b !important;
+}
+
+/* Organização dos filtros e indicadores de evolução */
+
+.filtros-infraestrutura {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.painel-evolucao-relatos {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.indicador-evolucao {
+    flex: 1;
+    min-width: 125px;
+    min-height: 58px;
+    justify-content: center;
+    padding: 8px 12px;
+    background: var(--superficie);
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+}
+
+.indicador-evolucao span {
+    font-size: 11px;
+    color: var(--texto-suave);
+}
+
+.indicador-evolucao strong {
+    font-size: 15px;
+    color: var(--texto);
+}
+
+.acao-relatorio button {
+    min-height: 58px;
+}
+
+@media (max-width: 1000px) {
+    .filtros-infraestrutura {
+        align-items: flex-start;
+    }
+
+    .painel-evolucao-relatos {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .filtros-infraestrutura,
+    .painel-evolucao-relatos {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .filtros-infraestrutura label,
+    .filtros-infraestrutura select,
+    .painel-evolucao-relatos > *,
+    .indicador-evolucao {
+        width: 100%;
+    }
+}
+
+.indicador-evolucao small {
+    color: var(--texto-suave);
+    font-size: 11px;
+}
+
+
+/* PRINCIPAIS FATORES DE RISCO */
+
+.painel-fatores-risco {
+    margin: 24px 0;
+    padding: 20px;
+    background: var(--superficie);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+}
+
+.lista-fatores-risco {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 24px;
+    margin-top: 20px;
+}
+
+.item-fator-risco {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fator-cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.fator-posicao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 6px;
+    background: var(--fundo);
+    color: var(--texto-suave);
+    font-size: 12px;
+}
+
+.fator-cabecalho strong {
+    flex: 1;
+    color: var(--texto);
+    font-size: 14px;
+}
+
+.fator-indice {
+    color: var(--texto);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.barra-fator-risco {
+    height: 8px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: var(--fundo);
+}
+
+.barra-fator-preenchida {
+    height: 100%;
+    border-radius: 10px;
+    background: #78A9D4;
+}
+
+@media (max-width: 600px) {
+    .lista-fatores-risco {
+        grid-template-columns: 1fr;
+    }
+
+    .painel-fatores-risco {
+        padding: 15px;
+    }
+}
+
+
+/* BOTÃO FLUTUANTE DE AJUDA */
+
+.ajuda-indicadores {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 9999;
+    font-family: inherit;
+}
+
+#botao-ajuda-indicadores {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 12px 17px;
+    border: 1px solid var(--borda);
+    border-radius: 30px;
+    background: var(--superficie);
+    color: var(--texto);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#botao-ajuda-indicadores:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16);
+}
+
+.icone-ajuda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4B91C7;
+    color: white;
+    font-weight: 700;
+}
+
+.painel-ajuda-indicadores {
+    position: absolute;
+    right: 0;
+    bottom: 58px;
+    width: 310px;
+    max-width: calc(100vw - 32px);
+    padding: 17px;
+    background: var(--superficie);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.16);
+}
+
+.painel-ajuda-indicadores[hidden] {
+    display: none;
+}
+
+.cabecalho-ajuda {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--borda);
+    color: var(--texto);
+}
+
+#fechar-ajuda-indicadores {
+    border: none;
+    background: transparent;
+    color: var(--texto-suave);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.conteudo-ajuda {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 10px;
+}
+
+.conteudo-ajuda details {
+    padding: 10px;
+    border-radius: 7px;
+    background: var(--fundo);
+}
+
+.conteudo-ajuda summary {
+    color: var(--texto);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.conteudo-ajuda details p {
+    margin: 9px 0 2px;
+    color: var(--texto-suave);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .ajuda-indicadores {
+        right: 14px;
+        bottom: 16px;
+    }
+
+    .painel-ajuda-indicadores {
+        width: min(310px, calc(100vw - 28px));
+    }
+}
+
+
+/* Seção de fatores de risco do relatório */
+
+.titulo-secao-relatorio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 12px;
+}
+
+.titulo-secao-relatorio h3 {
+    margin-bottom: 6px;
+}
+
+.titulo-secao-relatorio p {
+    color: #64748b;
+    font-size: 14px;
+    margin: 0;
+}
+
+.icone-secao {
+    font-size: 25px;
+}
+
+.lista-fatores-relatorio {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.card-fator-relatorio {
+    padding: 16px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.cabecalho-fator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.identificacao-fator {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icone-fator {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 19px;
+    flex-shrink: 0;
+}
+
+.identificacao-fator strong {
+    display: block;
+    color: #1e293b;
+    font-size: 14px;
+}
+
+.identificacao-fator small {
+    display: block;
+    color: #94a3b8;
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+.valor-fator {
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.barra-fator-relatorio {
+    height: 8px;
+    width: 100%;
+    background: #edf1f5;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.preenchimento-fator {
+    height: 100%;
+    border-radius: 20px;
+    transition: width 0.4s ease;
+}
+
+.destaque-fator-relatorio {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-top: 20px;
+    padding: 18px;
+    background: #fff8eb;
+    border: 1px solid #f5dfb5;
+    border-radius: 12px;
+}
+
+.icone-destaque {
+    font-size: 23px;
+}
+
+.rotulo-destaque {
+    color: #a16207;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+.destaque-fator-relatorio h4 {
+    margin: 6px 0;
+    color: #334155;
+    font-size: 17px;
+}
+
+.destaque-fator-relatorio h4 span {
+    color: #b45309;
+    margin-left: 5px;
+}
+
+.destaque-fator-relatorio p,
+.queixas-relatorio p {
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.queixas-relatorio {
+    margin-top: 16px;
+    padding: 16px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.queixas-relatorio h4 {
+    margin: 0 0 8px;
+    color: #334155;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .lista-fatores-relatorio {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================
+   MAPA INTERATIVO DE RISCO POR BAIRRO
+========================================= */
+
+.secao-mapa-risco {
+    margin-top: 24px;
+}
+
+.legenda-mapa {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 20px;
+    margin: 14px 0;
+    color: var(--texto-suave);
+    font-size: 13px;
+}
+
+.legenda-mapa span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.ponto-legenda {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(28, 39, 51, 0.2);
+}
+
+.ponto-legenda.risco-baixo {
+    background: #3c8d5a;
+}
+
+.ponto-legenda.risco-moderado {
+    background: #c9a227;
+}
+
+.ponto-legenda.risco-alto {
+    background: #b3261e;
+}
+
+#mapa-risco-regiao {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 430px;
+    overflow: hidden;
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    background: #e8eef2;
+}
+
+#mapa-risco-regiao .leaflet-popup-content-wrapper {
+    border-radius: 10px;
+}
+
+#mapa-risco-regiao .leaflet-popup-content {
+    margin: 12px 14px;
+    line-height: 1.5;
+}
+
+.popup-mapa-risco strong,
+.popup-mapa-risco span,
+.popup-mapa-risco small {
+    display: block;
+}
+
+.popup-mapa-risco strong {
+    color: var(--texto);
+    font-size: 14px;
+}
+
+.popup-mapa-risco span,
+.popup-mapa-risco p {
+    color: var(--texto-suave);
+    font-size: 12px;
+}
+
+.popup-mapa-risco p {
+    margin: 7px 0;
+}
+
+.popup-mapa-risco small {
+    max-width: 230px;
+    color: var(--texto-suave);
+    font-size: 11px;
+}
+
+.aviso-mapa {
+    margin-top: 10px;
+    color: var(--texto-suave);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    #mapa-risco-regiao {
+        height: 330px;
+    }
+
+    .legenda-mapa {
+        gap: 9px 14px;
+        font-size: 12px;
+    }
+}
+
+
+/* DESTAQUE DO IMÓVEL ABERTO A PARTIR DO MAPA */
+.card-imovel.imovel-destacado {
+    scroll-margin-top: 24px;
+    border: 2px solid var(--destaque);
+    box-shadow: 0 0 0 3px rgba(31, 122, 140, 0.12);
+}
+
+
+/* LINK ENTRE A FICHA DO IMÓVEL E O MAPA DE RISCO */
+.acao-mapa-imovel {
+    margin-top: 16px;
+}
+
+.link-mapa-imovel {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px;
+    border: 1px solid var(--destaque);
+    border-radius: 8px;
+    color: var(--destaque);
+    background: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.link-mapa-imovel:hover {
+    color: #ffffff;
+    background: var(--destaque);
+}
+
+
+
+/* =====================================================
+   AJUSTES DO DASHBOARD — DETALHES E AJUDA
+   Mantém os estilos compartilhados das demais páginas.
+===================================================== */
+
+.detalhes-apartamento {
+    padding: 20px;
+    background: var(--superficie);
+    border: 1px solid var(--borda);
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(22, 50, 74, 0.05);
+}
+
+.detalhes-apartamento-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.detalhes-apartamento-cabecalho h2 {
+    margin: 0;
+}
+
+.botao-ocultar-detalhes {
+    padding: 8px 12px;
+    border: 1px solid var(--borda);
+    border-radius: 9px;
+    background: var(--superficie);
+    color: var(--destaque);
+    font: inherit;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.botao-ocultar-detalhes:hover {
+    border-color: var(--destaque);
+    background: #f2f8fa;
+}
+
+.botao-ocultar-detalhes[hidden] {
+    display: none !important;
+}
+
+.mensagem-detalhes > p {
+    padding: 14px 16px;
+    border: 1px dashed var(--borda);
+    border-radius: 10px;
+    color: var(--texto-suave);
+    background: #fbfdfe;
+}
+
+.mensagem-detalhes .detalhes-topo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 18px;
+    margin-bottom: 16px;
+    border: 1px solid #dce8ee;
+    border-left: 4px solid var(--destaque);
+    border-radius: 12px;
+    background: #f7fbfd;
+}
+
+.mensagem-detalhes .detalhes-topo h3 {
+    margin-top: 4px;
+    font-size: 1.2rem;
+    color: var(--texto);
+}
+
+.detalhes-identificador {
+    color: var(--destaque);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.mensagem-detalhes .detalhes-topo p {
+    margin-top: 6px;
+    color: var(--texto-suave);
+    font-size: 0.85rem;
+}
+
+.mensagem-detalhes .detalhes-indicadores {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.mensagem-detalhes .detalhe-item {
+    background: #ffffff;
+    border: 1px solid #dce8ee;
+    box-shadow: 0 2px 8px rgba(22, 50, 74, 0.04);
+}
+
+.mensagem-detalhes .detalhe-item span {
+    color: var(--texto-suave);
+    line-height: 1.4;
+}
+
+.mensagem-detalhes .detalhe-item strong {
+    color: var(--texto);
+    overflow-wrap: anywhere;
+}
+
+.mensagem-detalhes .detalhe-categoria {
+    padding: 16px 18px;
+    background: #f7fbfd;
+    border: 1px solid #dce8ee;
+}
+
+.detalhe-valores-ajustados {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+}
+
+.detalhe-valores-ajustados p {
+    color: var(--texto);
+}
+
+.mensagem-detalhes .detalhe-categoria small {
+    display: block;
+    margin-top: 10px;
+    color: var(--texto-suave);
+    font-size: 0.75rem;
+}
+
+.mensagem-detalhes .lista-ocorrencias {
+    padding: 16px 18px;
+    background: #ffffff;
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+}
+
+.mensagem-detalhes .lista-ocorrencias h4 {
+    margin-bottom: 14px;
+    color: var(--texto);
+}
+
+.mensagem-detalhes .risco-texto span {
+    color: var(--texto);
+}
+
+.mensagem-detalhes .barra-risco {
+    background: #e7eef2;
+}
+
+.card-apartamento {
+    width: 100%;
+    text-align: left;
+    color: var(--texto);
+    font: inherit;
+}
+
+.card-apartamento-cabecalho {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card-apartamento-cabecalho .nivel-baixo,
+.card-apartamento-cabecalho .nivel-moderado,
+.card-apartamento-cabecalho .nivel-alto {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.card-apartamento.selecionado {
+    border-color: var(--destaque);
+    box-shadow: 0 0 0 3px rgba(31, 122, 140, 0.12);
+}
+
+.card-apartamento-acao {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--destaque);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.sem-imoveis {
+    grid-column: 1 / -1;
+    padding: 16px;
+    color: var(--texto-suave);
+    background: var(--superficie);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+}
+
+.legenda-tendencia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    margin-top: 10px;
+    color: var(--texto-suave);
+    font-size: 0.76rem;
+}
+
+.legenda-tendencia span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.legenda-tendencia i {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+
+.tendencia-subindo { background: var(--critica); }
+.tendencia-estavel { background: var(--media); }
+.tendencia-descendo { background: var(--baixa); }
+
+@media (max-width: 800px) {
+    .mensagem-detalhes .detalhes-indicadores {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .detalhes-apartamento {
+        padding: 14px;
+    }
+
+    .detalhes-apartamento-cabecalho {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .mensagem-detalhes .detalhes-topo {
+        flex-direction: column;
+    }
+
+    .mensagem-detalhes .detalhes-indicadores {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Link do imóvel selecionado para a página completa de Imóveis */
+.botao-ver-imovel-pagina {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+    padding: 11px 16px;
+    border: 1px solid var(--destaque);
+    border-radius: 10px;
+    background: var(--destaque);
+    color: #ffffff;
+    font: inherit;
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.botao-ver-imovel-pagina:hover {
+    background: #176574;
+    transform: translateY(-1px);
+}
+
+.botao-ver-imovel-pagina:focus-visible {
+    outline: 3px solid rgba(31, 122, 140, 0.25);
+    outline-offset: 3px;
+}
+
+/* Destaque do imóvel aberto por um link vindo do Dashboard */
+.imovel-destacado {
+    border-color: var(--destaque) !important;
+    box-shadow: 0 0 0 3px rgba(31, 122, 140, 0.14);
+}
+
+
+.mercado-status-comparativo {
+    min-height: 18px;
+    margin: 4px 0 10px;
+    color: var(--texto-suave);
+    font-size: 0.78rem;
+}
+
+.mercado-risco-indice {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 7px;
+    background: #f0f4f7;
+    color: var(--texto);
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .mercado-controles-comparativo {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .mercado-controles-comparativo label,
+    .mercado-controles-comparativo select {
+        width: 100%;
+    }
+}
+
+
+/* Legenda das faixas de risco no gráfico risco × preço */
+.legenda-risco-mercado {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 16px;
+    margin-top: 10px;
+    color: var(--texto-suave);
+    font-size: 0.78rem;
+}
+
+.legenda-risco-mercado span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.legenda-risco-mercado .legenda-cor {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.legenda-risco-mercado .risco-baixo { background: #3C8D5A; }
+.legenda-risco-mercado .risco-moderado { background: #C9A227; }
+.legenda-risco-mercado .risco-alto { background: #B3261E; }
+
+
+/* EVOLUÇÃO MENSAL DEMONSTRATIVA DO MERCADO */
+.mercado-historico-secao {
+    margin-top: 26px;
+}
+
+.mercado-graficos-historico .mercado-area-grafico {
+    height: 275px;
+}
+
+.aviso-historico-mercado {
+    margin-top: 12px;
+    padding: 11px 13px;
+    border-left: 3px solid #C9A227;
+    border-radius: 6px;
+    background: #fff9e8;
+    color: #6f5a22;
+    font-size: 0.78rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .mercado-graficos-historico .mercado-area-grafico {
+        height: 250px;
+    }
+}
+
+
+/* RENTABILIDADE E CLASSIFICAÇÃO DE RISCO NO COMPARATIVO */
+.mercado-indicadores .indicador small {
+    line-height: 1.35;
+}
+
+.mercado-risco-celula {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.mercado-risco-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 76px;
+    padding: 5px 9px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.mercado-risco-baixo {
+    color: #286b42;
+    background: rgba(60, 141, 90, 0.13);
+}
+
+.mercado-risco-moderado {
+    color: #8a6b13;
+    background: rgba(201, 162, 39, 0.16);
+}
+
+.mercado-risco-alto {
+    color: #9d241e;
+    background: rgba(179, 38, 30, 0.12);
+}
+
+@media (max-width: 600px) {
+    .mercado-risco-celula {
+        justify-content: flex-start;
+    }}
+
+    /* =====================================================
+   TRECHO 1 de 2: FILTROS DO MAPA
+   Cole no CSS 1 logo depois do bloco do mapa
+   (depois do @media do #mapa-risco-regiao) e antes de
+   "DESTAQUE DO IMÓVEL ABERTO A PARTIR DO MAPA".
+===================================================== */
+
+/* FILTROS DO MAPA: seguem o mesmo padrão dos filtros do topo */
+.filtros-mapa {
+    margin: 18px 0 10px;
+}
+
+.orientacao-mapa {
+    margin: -3px 0 10px;
+    color: var(--texto-suave);
+    font-size: 0.8rem;
+}
+
+.popup-mapa-risco .nome-imovel-mapa {
+    margin: 8px 0 6px;
+    color: var(--texto);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.link-imovel-mapa {
+    display: inline-block;
+    margin: 2px 0 8px;
+    padding: 7px 11px;
+    border-radius: 7px;
+    background: var(--menu);
+    color: #fff !important;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.link-imovel-mapa:hover {
+    background: var(--destaque);
+}
+
+.imovel-indisponivel-mapa {
+    display: inline-block;
+    margin: 2px 0 8px;
+    color: var(--texto-suave);
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   TRECHO 2 de 2: PÁGINA MERCADO IMOBILIÁRIO
+   + CONTROLES DA COMPARAÇÃO ENTRE BAIRROS
+   Cole no CSS 1 logo antes de ".mercado-status-comparativo".
+   (Ele deve ficar antes dos blocos finais de mercado:
+   legenda, evolução mensal e rentabilidade.)
+===================================================== */
+
+/* =====================================================
+   PÁGINA MERCADO IMOBILIÁRIO
+===================================================== */
+.mercado-filtros {
+    align-items: flex-end;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.mercado-filtros label {
+    min-width: 160px;
+}
+
+.mercado-filtros select {
+    min-height: 38px;
+}
+
+.botao-limpar-mercado {
+    min-height: 38px;
+    padding: 8px 14px;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    background: var(--superficie);
+    color: var(--texto);
+    font: inherit;
+    cursor: pointer;
+}
+
+.botao-limpar-mercado:hover {
+    border-color: var(--destaque);
+    color: var(--destaque);
+}
+
+.mercado-indicadores {
+    grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+    gap: 12px;
+    margin-bottom: 26px;
+}
+
+.mercado-indicadores .indicador {
+    padding: 14px 16px;
+    min-width: 0;
+}
+
+.mercado-indicadores .indicador strong {
+    font-size: 1.25rem;
+    overflow-wrap: anywhere;
+}
+
+.mercado-indicadores .indicador small {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.72rem;
+}
+
+.mercado-graficos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.mercado-card-grafico {
+    min-width: 0;
+    padding: 18px;
+    background: var(--superficie);
+    border: 1px solid var(--borda);
+    border-radius: 14px;
+}
+
+.mercado-card-grafico .titulo-secao {
+    min-height: 52px;
+}
+
+.mercado-card-grafico h3 {
+    font-size: 1rem;
+}
+
+.mercado-card-grafico .titulo-secao p {
+    line-height: 1.45;
+}
+
+.mercado-area-grafico {
+    position: relative;
+    width: 100%;
+    height: 285px;
+}
+
+.nota-grafico-mercado {
+    margin-top: 8px;
+    color: var(--texto-suave);
+    font-size: 0.75rem;
+    line-height: 1.45;
+}
+
+.mercado-tabela-secao {
+    margin-top: 26px;
+}
+
+.mercado-tabela-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    background: var(--superficie);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+}
+
+.tabela-mercado {
+    width: 100%;
+    min-width: 720px;
+    border-collapse: collapse;
+}
+
+.tabela-mercado th,
+.tabela-mercado td {
+    padding: 13px 15px;
+    border-bottom: 1px solid var(--borda);
+    text-align: left;
+    white-space: nowrap;
+}
+
+.tabela-mercado th {
+    background: #f5f8fc;
+    color: #475569;
+    font-size: 0.8rem;
+}
+
+.tabela-mercado td {
+    color: var(--texto);
+    font-size: 0.85rem;
+}
+
+.tabela-mercado tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.tabela-mercado tbody tr:hover {
+    background: #f8fafc;
+}
+
+.mercado-sem-dados {
+    padding: 24px !important;
+    text-align: center !important;
+    color: var(--texto-suave) !important;
+}
+
+@media (max-width: 900px) {
+    .mercado-graficos {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .mercado-filtros {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .mercado-filtros label,
+    .mercado-filtros select,
+    .botao-limpar-mercado {
+        width: 100%;
+    }
+
+    .mercado-area-grafico {
+        height: 250px;
+    }
+
+    .mercado-card-grafico {
+        padding: 14px;
+    }
+}
+
+
+/* CONTROLES DA COMPARAÇÃO ENTRE BAIRROS */
+.mercado-controles-comparativo {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 16px 0 8px;
+}
+
+.mercado-controles-comparativo label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 190px;
+    color: var(--texto-suave);
+    font-size: 0.82rem;
+}
+
+.mercado-controles-comparativo select {
+    min-height: 38px;
+    padding: 8px 10px;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    background: var(--superficie);
+    color: var(--texto);
+    font: inherit;
+}

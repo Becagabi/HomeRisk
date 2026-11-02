@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HomeRisk - Mercado imobiliário</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <aside class="menu">
+        <div class="marca">
+            <span class="marca-icone">H</span>
+            <div>
+                <strong>HomeRisk</strong>
+                <small>Risco e mercado imobiliário</small>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="imoveis.html">Imóveis</a>
+            <a href="risco-regiao.html">Risco da região</a>
+            <a href="mercado.html" class="ativo" aria-current="page">Mercado imobiliário</a>
+            <a href="sobre.html">Sobre</a>
+        </nav>
+    </aside>
+
+    <main class="conteudo">
+        <header class="topo">
+            <h1>Mercado imobiliário</h1>
+            <p>Compare valores de venda, aluguel e preço por metro quadrado entre regiões e bairros.</p>
+        </header>
+
+        <section class="filtros mercado-filtros" aria-label="Filtros do mercado imobiliário">
+            <label for="mercado-regiao">Região
+                <select id="mercado-regiao">
+                    <option value="">Todas as regiões</option>
+                    <option value="Centro">Centro</option>
+                    <option value="Norte">Norte</option>
+                    <option value="Sul">Sul</option>
+                    <option value="Leste">Leste</option>
+                    <option value="Oeste">Oeste</option>
+                </select>
+            </label>
+            <label for="mercado-bairro">Bairro
+                <select id="mercado-bairro">
+                    <option value="">Todos os bairros</option>
+                    <option value="Bom Retiro">Bom Retiro</option>
+                    <option value="Capão Redondo">Capão Redondo</option>
+                    <option value="Itaquera">Itaquera</option>
+                    <option value="Moema">Moema</option>
+                    <option value="Pinheiros">Pinheiros</option>
+                    <option value="Santana">Santana</option>
+                    <option value="Tucuruvi">Tucuruvi</option>
+                    <option value="Vila Maria">Vila Maria</option>
+                </select>
+            </label>
+            <label for="mercado-tipo">Tipo de imóvel
+                <select id="mercado-tipo">
+                    <option value="">Todos</option>
+                    <option value="Apartamento">Apartamento</option>
+                    <option value="Casa">Casa</option>
+                </select>
+            </label>
+            <label for="mercado-periodo">Período histórico
+                <select id="mercado-periodo">
+                    <option value="3">Últimos 3 meses</option>
+                    <option value="6">Últimos 6 meses</option>
+                    <option value="12" selected>Últimos 12 meses</option>
+                </select>
+            </label>
+            <button type="button" id="limpar-filtros-mercado" class="botao-limpar-mercado">Limpar filtros</button>
+        </section>
+
+        <section class="indicadores mercado-indicadores" aria-label="Indicadores do mercado">
+            <article class="indicador">
+                <span>Imóveis analisados</span>
+                <strong id="mercado-total-imoveis">—</strong>
+            </article>
+            <article class="indicador">
+                <span>Venda média</span>
+                <strong id="mercado-media-venda"></strong>
+            </article>
+            <article class="indicador">
+                <span>Aluguel médio</span>
+                <strong id="mercado-media-aluguel"></strong>
+            </article>
+            <article class="indicador">
+                <span>Preço médio por m²</span>
+                <strong id="mercado-preco-m2"></strong>
+            </article>
+            <article class="indicador">
+                <span>Rentabilidade bruta anual estimada</span>
+                <strong id="mercado-rentabilidade"></strong>
+                <small>Aluguel anual ÷ venda, sem descontar despesas</small>
+            </article>
+            <article class="indicador">
+                <span>Correlação risco × venda</span>
+                <strong id="mercado-correlacao">—</strong>
+                <small id="mercado-correlacao-nota">Amostra demonstrativa</small>
+            </article>
+        </section>
+
+        <section class="lista-imoveis-pagina mercado-historico-secao">
+            <div class="titulo-secao">
+                <div>
+                    <h2>Evolução mensal dos preços</h2>
+                    <p>Visualize a trajetória demonstrativa de venda e aluguel conforme o período histórico selecionado. Os gráficos também respeitam região, bairro e tipo de imóvel.</p>
+                </div>
+            </div>
+
+            <div class="mercado-graficos mercado-graficos-historico">
+                <article class="mercado-card-grafico">
+                    <div class="titulo-secao">
+                        <h3>Evolução do preço médio de venda</h3>
+                        <p>Valores mensais simulados a partir da base atual.</p>
+                    </div>
+                    <div class="mercado-area-grafico">
+                        <canvas id="grafico-evolucao-venda"></canvas>
+                    </div>
+                </article>
+
+                <article class="mercado-card-grafico">
+                    <div class="titulo-secao">
+                        <h3>Evolução do aluguel médio</h3>
+                        <p>Valores mensais simulados a partir da base atual.</p>
+                    </div>
+                    <div class="mercado-area-grafico">
+                        <canvas id="grafico-evolucao-aluguel"></canvas>
+                    </div>
+                </article>
+            </div>
+
+            <p class="aviso-historico-mercado">
+                Atenção: esta série histórica é uma simulação didática criada para demonstrar a análise temporal.
+                Não representa preços praticados, anúncios ou valorização real do mercado imobiliário.
+            </p>
+        </section>
+
+        <section class="lista-imoveis-pagina">
+            <div class="titulo-secao">
+                <div>
+                    <h2>Indicadores por região e bairro</h2>
+                    <p>Os gráficos respondem aos filtros selecionados acima.</p>
+                </div>
+            </div>
+
+            <div class="mercado-graficos">
+                <article class="mercado-card-grafico">
+                    <div class="titulo-secao">
+                        <h3>Venda média por região</h3>
+                        <p>Valor médio dos imóveis cadastrados em cada região.</p>
+                    </div>
+                    <div class="mercado-area-grafico"><canvas id="grafico-venda-regiao"></canvas></div>
+                </article>
+                <article class="mercado-card-grafico">
+                    <div class="titulo-secao">
+                        <h3>Aluguel médio por região</h3>
+                        <p>Comparação dos valores mensais de aluguel.</p>
+                    </div>
+                    <div class="mercado-area-grafico"><canvas id="grafico-aluguel-regiao"></canvas></div>
+                </article>
+                <article class="mercado-card-grafico">
+                    <div class="titulo-secao">
+                        <h3>Preço médio por m² por bairro</h3>
+                        <p>Preço de venda total dividido pela área total dos imóveis do bairro.</p>
+                    </div>
+                    <div class="mercado-area-grafico"><canvas id="grafico-preco-m2-bairro"></canvas></div>
+                </article>
+                <article class="mercado-card-grafico">
+                    <div class="titulo-secao">
+                        <h3>Relação entre risco e preço de venda</h3>
+                        <p>Cada ponto representa um imóvel da base demonstrativa.</p>
+                    </div>
+                    <div class="mercado-area-grafico"><canvas id="grafico-risco-venda"></canvas></div>
+                    <div class="legenda-risco-mercado" aria-label="Legenda das faixas do índice de risco">
+                        <span><i class="legenda-cor risco-baixo"></i> Baixo (0–39)</span>
+                        <span><i class="legenda-cor risco-moderado"></i> Moderado (40–69)</span>
+                        <span><i class="legenda-cor risco-alto"></i> Alto (70–100)</span>
+                    </div>
+                    <p class="nota-grafico-mercado">A associação observada não indica causalidade. Os dados desta versão são fictícios.</p>
+                </article>
+                <article class="mercado-card-grafico">
+                    <div class="titulo-secao">
+                        <h3>Relação entre risco e aluguel</h3>
+                        <p>Cada ponto representa um imóvel; a cor indica sua faixa de risco.</p>
+                    </div>
+                    <div class="mercado-area-grafico"><canvas id="grafico-risco-aluguel"></canvas></div>
+                    <div class="legenda-risco-mercado" aria-label="Legenda das faixas do índice de risco">
+                        <span><i class="legenda-cor risco-baixo"></i> Baixo (0–39)</span>
+                        <span><i class="legenda-cor risco-moderado"></i> Moderado (40–69)</span>
+                        <span><i class="legenda-cor risco-alto"></i> Alto (70–100)</span>
+                    </div>
+                    <p class="nota-grafico-mercado">A associação observada não indica causalidade. Os dados desta versão são fictícios.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="lista-imoveis-pagina mercado-tabela-secao">
+            <div class="titulo-secao">
+                <div>
+                    <h2>Comparativo por bairro</h2>
+                    <p>Compare os bairros e escolha qual indicador deseja analisar primeiro.</p>
+                </div>
+            </div>
+
+            <div class="mercado-controles-comparativo" aria-label="Opções de ordenação do comparativo">
+                <label for="mercado-ordenar-por">Ordenar bairros por
+                    <select id="mercado-ordenar-por">
+                        <option value="venda">Venda média</option>
+                        <option value="aluguel">Aluguel médio</option>
+                        <option value="m2">Preço médio por m²</option>
+                        <option value="risco">Risco médio</option>
+                        <option value="quantidade">Quantidade de imóveis</option>
+                    </select>
+                </label>
+                <label for="mercado-ordem">Ordem
+                    <select id="mercado-ordem">
+                        <option value="desc">Maior para menor</option>
+                        <option value="asc">Menor para maior</option>
+                    </select>
+                </label>
+            </div>
+            <p id="mercado-status-comparativo" class="mercado-status-comparativo" aria-live="polite"></p>
+
+            <div class="mercado-tabela-wrapper">
+                <table class="tabela-mercado">
+                    <thead>
+                        <tr>
+                            <th>Bairro</th>
+                            <th>Imóveis</th>
+                            <th>Venda média</th>
+                            <th>Aluguel médio</th>
+                            <th>Preço/m²</th>
+                            <th>Risco médio</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-mercado-corpo"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <p class="aviso">
+            Base fictícia de protótipo. Os valores, índices e comparações são demonstrativos,
+            não representam ofertas reais, avaliação oficial ou recomendação de investimento.
+        </p>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/dados.js"></script>
+    <script src="js/script-mercado.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HomeRisk - Imóveis</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- MENU LATERAL -->
+
+    <aside class="menu">
+
+        <div class="marca">
+
+            <span class="marca-icone">H</span>
+
+            <div>
+                <strong>HomeRisk</strong>
+                <small>Risco e mercado imobiliário</small>
+            </div>
+
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Dashboard
+            </a>
+
+            <a href="imoveis.html" class="ativo">
+                Imóveis
+            </a>
+
+            <a href="risco-regiao.html">
+                Risco da região
+            </a>
+
+            <a href="mercado.html">
+                Mercado imobiliário
+            </a>
+
+            <a href="sobre.html">
+                Sobre
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <!-- CONTEÚDO -->
+
+    <main class="conteudo">
+
+        <header class="topo">
+
+            <h1>Imóveis</h1>
+
+            <p>
+                Consulte os imóveis analisados pelo HomeRisk.
+            </p>
+
+        </header>
+
+        <!-- PESQUISA -->
+
+        <section class="pesquisa-pagina">
+
+            <label for="pesquisa-imovel">
+                Pesquisar imóvel
+            </label>
+
+            <input
+                type="text"
+                id="pesquisa-imovel"
+                placeholder="Digite imóvel, bairro ou região..."
+            >
+
+        </section>
+
+        <!-- FILTROS -->
+
+        <section class="filtros" aria-label="Filtros">
+
+            <label>
+                Região
+                <select id="filtro-regiao">
+                    <option value="">Todas</option>
+                    <option>Centro</option>
+                    <option>Norte</option>
+                    <option>Sul</option>
+                    <option>Leste</option>
+                    <option>Oeste</option>
+                </select>
+            </label>
+
+            <label>
+                Bairro
+                <select id="filtro-bairro">
+                    <option value="">Todos</option>
+                    <option>Bom Retiro</option>
+                    <option>Capão Redondo</option>
+                    <option>Itaquera</option>
+                    <option>Moema</option>
+                    <option>Pinheiros</option>
+                    <option>Santana</option>
+                    <option>Tucuruvi</option>
+                    <option>Vila Maria</option>
+                </select>
+            </label>
+
+            <label>
+                Tipo de imóvel
+                <select id="filtro-tipo">
+                    <option value="">Todos</option>
+                    <option>Apartamento</option>
+                    <option>Casa</option>
+                </select>
+            </label>
+
+            <label>
+                Faixa de preço
+                <select id="filtro-preco">
+                    <option value="">Todas</option>
+                    <option value="ate300">Até R$ 300 mil</option>
+                    <option value="300a450">R$ 300 mil a R$ 450 mil</option>
+                    <option value="acima450">Acima de R$ 450 mil</option>
+                </select>
+            </label>
+
+            <label>
+                Nível de risco
+                <select id="filtro-nivel">
+                    <option value="">Todos</option>
+                    <option>Baixo</option>
+                    <option>Moderado</option>
+                    <option>Alto</option>
+                </select>
+            </label>
+
+        </section>
+
+        <!-- RESUMO -->
+
+        <section class="indicadores">
+
+            <article class="indicador">
+                <span>Imóveis encontrados</span>
+                <strong id="total-imoveis">0</strong>
+            </article>
+
+            <article class="indicador">
+                <span>Venda média</span>
+                <strong id="media-venda">R$ 0</strong>
+            </article>
+
+            <article class="indicador">
+                <span>Aluguel médio</span>
+                <strong id="media-aluguel">R$ 0</strong>
+            </article>
+
+        </section>
+
+        <!-- LISTA -->
+
+        <section class="lista-imoveis-pagina">
+
+            <div class="titulo-secao">
+                <div>
+                    <h2>Imóveis analisados</h2>
+                    <p>Selecione um imóvel para consultar seus detalhes.</p>
+                </div>
+            </div>
+
+            <div
+                id="lista-imoveis-completa"
+                class="lista-imoveis-completa"
+            ></div>
+
+        </section>
+
+        <p class="aviso">
+            Dados fictícios de protótipo.
+            O índice de risco é um modelo analítico de demonstração
+            e não constitui recomendação imobiliária nem avaliação
+            oficial de segurança ou de valor de mercado.
+        </p>
+
+    </main>
+
+
+
+    <!-- BOTÃO FLUTUANTE: ENTENDA OS INDICADORES -->
+    <div class="ajuda-indicadores">
+        <button
+            type="button"
+            id="botao-ajuda-indicadores"
+            aria-expanded="false"
+            aria-controls="painel-ajuda-indicadores"
+        >
+            <span class="icone-ajuda">i</span>
+            Entenda os indicadores
+        </button>
+
+        <div
+            id="painel-ajuda-indicadores"
+            class="painel-ajuda-indicadores"
+            hidden
+        >
+            <div class="cabecalho-ajuda">
+                <strong>Entenda os indicadores</strong>
+                <button
+                    type="button"
+                    id="fechar-ajuda-indicadores"
+                    aria-label="Fechar explicações"
+                >
+                    &times;
+                </button>
+            </div>
+
+            <div class="conteudo-ajuda">
+                <details>
+                    <summary>Saneamento</summary>
+                    <p>Avalia abastecimento de água, coleta e tratamento de esgoto e drenagem.</p>
+                </details>
+
+                <details>
+                    <summary>Infraestrutura</summary>
+                    <p>Considera condições elétricas e urbanas, como iluminação, vias e estruturas públicas.</p>
+                </details>
+
+                <details>
+                    <summary>Segurança</summary>
+                    <p>Representa os indicadores utilizados para avaliar as condições de segurança da localidade.</p>
+                </details>
+
+                <details>
+                    <summary>Transporte</summary>
+                    <p>Considera mobilidade, acesso ao transporte público e condições de deslocamento.</p>
+                </details>
+
+                <details>
+                    <summary>Vulnerabilidade</summary>
+                    <p>Representa fatores sociais e territoriais que podem aumentar a exposição da população a riscos.</p>
+                </details>
+
+                <details>
+                    <summary>Ocorrências</summary>
+                    <p>Reúne registros de eventos e problemas identificados na localidade.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/dados.js"></script>
+    <script src="js/script-imoveis.js"></script>
+
+</body>
+</html>

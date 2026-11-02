@@ -1,0 +1,481 @@
+﻿bairro;regiao;categoria_indicador;mes_referencia;quantidade_demonstrativa;observacao
+Bom Retiro;Centro;Saneamento;Nov/25;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Saneamento;Dez/25;17;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Saneamento;Jan/26;16;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Saneamento;Fev/26;20;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Saneamento;Mar/26;22;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Saneamento;Abr/26;15;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Saneamento;Mai/26;18;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Saneamento;Jun/26;21;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Saneamento;Jul/26;16;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Saneamento;Ago/26;23;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Saneamento;Set/26;19;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Saneamento;Out/26;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Infraestrutura;Nov/25;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Infraestrutura;Dez/25;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Infraestrutura;Jan/26;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Infraestrutura;Fev/26;15;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Infraestrutura;Mar/26;17;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Infraestrutura;Abr/26;12;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Infraestrutura;Mai/26;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Infraestrutura;Jun/26;16;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Infraestrutura;Jul/26;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Infraestrutura;Ago/26;18;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Infraestrutura;Set/26;15;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Infraestrutura;Out/26;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Segurança;Nov/25;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Segurança;Dez/25;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Segurança;Jan/26;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Segurança;Fev/26;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Segurança;Mar/26;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Segurança;Abr/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Segurança;Mai/26;12;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Segurança;Jun/26;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Segurança;Jul/26;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Segurança;Ago/26;16;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Segurança;Set/26;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Segurança;Out/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Transporte;Nov/25;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Transporte;Dez/25;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Transporte;Jan/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Transporte;Fev/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Transporte;Mar/26;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Transporte;Abr/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Transporte;Mai/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Transporte;Jun/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Transporte;Jul/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Transporte;Ago/26;12;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Transporte;Set/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Transporte;Out/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Vulnerabilidade;Nov/25;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Vulnerabilidade;Dez/25;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Vulnerabilidade;Jan/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Vulnerabilidade;Fev/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Vulnerabilidade;Mar/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Vulnerabilidade;Abr/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Vulnerabilidade;Mai/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Vulnerabilidade;Jun/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Vulnerabilidade;Jul/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Vulnerabilidade;Ago/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Vulnerabilidade;Set/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Bom Retiro;Centro;Vulnerabilidade;Out/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Saneamento;Nov/25;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Saneamento;Dez/25;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Saneamento;Jan/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Saneamento;Fev/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Saneamento;Mar/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Saneamento;Abr/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Saneamento;Mai/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Saneamento;Jun/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Saneamento;Jul/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Saneamento;Ago/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Saneamento;Set/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Saneamento;Out/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Infraestrutura;Nov/25;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Infraestrutura;Dez/25;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Infraestrutura;Jan/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Infraestrutura;Fev/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Infraestrutura;Mar/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Infraestrutura;Abr/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Infraestrutura;Mai/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Infraestrutura;Jun/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Infraestrutura;Jul/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Infraestrutura;Ago/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Infraestrutura;Set/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Infraestrutura;Out/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Segurança;Nov/25;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Segurança;Dez/25;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Segurança;Jan/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Segurança;Fev/26;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Segurança;Mar/26;12;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Segurança;Abr/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Segurança;Mai/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Segurança;Jun/26;12;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Segurança;Jul/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Segurança;Ago/26;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Segurança;Set/26;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Segurança;Out/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Transporte;Nov/25;4;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Transporte;Dez/25;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Transporte;Jan/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Transporte;Fev/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Transporte;Mar/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Transporte;Abr/26;4;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Transporte;Mai/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Transporte;Jun/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Transporte;Jul/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Transporte;Ago/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Transporte;Set/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Transporte;Out/26;4;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Vulnerabilidade;Nov/25;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Vulnerabilidade;Dez/25;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Vulnerabilidade;Jan/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Vulnerabilidade;Fev/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Vulnerabilidade;Mar/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Vulnerabilidade;Abr/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Vulnerabilidade;Mai/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Vulnerabilidade;Jun/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Vulnerabilidade;Jul/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Vulnerabilidade;Ago/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Vulnerabilidade;Set/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Pinheiros;Oeste;Vulnerabilidade;Out/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Saneamento;Nov/25;18;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Saneamento;Dez/25;21;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Saneamento;Jan/26;20;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Saneamento;Fev/26;24;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Saneamento;Mar/26;26;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Saneamento;Abr/26;19;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Saneamento;Mai/26;22;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Saneamento;Jun/26;25;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Saneamento;Jul/26;20;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Saneamento;Ago/26;29;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Saneamento;Set/26;23;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Saneamento;Out/26;17;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Infraestrutura;Nov/25;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Infraestrutura;Dez/25;17;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Infraestrutura;Jan/26;16;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Infraestrutura;Fev/26;20;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Infraestrutura;Mar/26;22;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Infraestrutura;Abr/26;15;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Infraestrutura;Mai/26;18;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Infraestrutura;Jun/26;21;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Infraestrutura;Jul/26;16;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Infraestrutura;Ago/26;23;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Infraestrutura;Set/26;19;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Infraestrutura;Out/26;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Segurança;Nov/25;12;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Segurança;Dez/25;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Segurança;Jan/26;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Segurança;Fev/26;17;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Segurança;Mar/26;18;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Segurança;Abr/26;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Segurança;Mai/26;15;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Segurança;Jun/26;17;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Segurança;Jul/26;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Segurança;Ago/26;20;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Segurança;Set/26;16;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Segurança;Out/26;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Transporte;Nov/25;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Transporte;Dez/25;15;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Transporte;Jan/26;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Transporte;Fev/26;18;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Transporte;Mar/26;19;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Transporte;Abr/26;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Transporte;Mai/26;16;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Transporte;Jun/26;18;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Transporte;Jul/26;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Transporte;Ago/26;21;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Transporte;Set/26;17;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Transporte;Out/26;12;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Vulnerabilidade;Nov/25;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Vulnerabilidade;Dez/25;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Vulnerabilidade;Jan/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Vulnerabilidade;Fev/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Vulnerabilidade;Mar/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Vulnerabilidade;Abr/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Vulnerabilidade;Mai/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Vulnerabilidade;Jun/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Vulnerabilidade;Jul/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Vulnerabilidade;Ago/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Vulnerabilidade;Set/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Itaquera;Leste;Vulnerabilidade;Out/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Saneamento;Nov/25;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Saneamento;Dez/25;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Saneamento;Jan/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Saneamento;Fev/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Saneamento;Mar/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Saneamento;Abr/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Saneamento;Mai/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Saneamento;Jun/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Saneamento;Jul/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Saneamento;Ago/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Saneamento;Set/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Saneamento;Out/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Infraestrutura;Nov/25;4;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Infraestrutura;Dez/25;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Infraestrutura;Jan/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Infraestrutura;Fev/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Infraestrutura;Mar/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Infraestrutura;Abr/26;4;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Infraestrutura;Mai/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Infraestrutura;Jun/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Infraestrutura;Jul/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Infraestrutura;Ago/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Infraestrutura;Set/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Infraestrutura;Out/26;4;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Segurança;Nov/25;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Segurança;Dez/25;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Segurança;Jan/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Segurança;Fev/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Segurança;Mar/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Segurança;Abr/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Segurança;Mai/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Segurança;Jun/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Segurança;Jul/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Segurança;Ago/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Segurança;Set/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Segurança;Out/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Transporte;Nov/25;3;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Transporte;Dez/25;4;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Transporte;Jan/26;4;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Transporte;Fev/26;4;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Transporte;Mar/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Transporte;Abr/26;3;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Transporte;Mai/26;4;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Transporte;Jun/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Transporte;Jul/26;4;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Transporte;Ago/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Transporte;Set/26;4;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Transporte;Out/26;3;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Vulnerabilidade;Nov/25;4;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Vulnerabilidade;Dez/25;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Vulnerabilidade;Jan/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Vulnerabilidade;Fev/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Vulnerabilidade;Mar/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Vulnerabilidade;Abr/26;4;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Vulnerabilidade;Mai/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Vulnerabilidade;Jun/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Vulnerabilidade;Jul/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Vulnerabilidade;Ago/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Vulnerabilidade;Set/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Moema;Sul;Vulnerabilidade;Out/26;4;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Saneamento;Nov/25;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Saneamento;Dez/25;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Saneamento;Jan/26;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Saneamento;Fev/26;15;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Saneamento;Mar/26;17;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Saneamento;Abr/26;12;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Saneamento;Mai/26;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Saneamento;Jun/26;16;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Saneamento;Jul/26;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Saneamento;Ago/26;18;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Saneamento;Set/26;15;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Saneamento;Out/26;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Infraestrutura;Nov/25;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Infraestrutura;Dez/25;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Infraestrutura;Jan/26;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Infraestrutura;Fev/26;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Infraestrutura;Mar/26;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Infraestrutura;Abr/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Infraestrutura;Mai/26;12;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Infraestrutura;Jun/26;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Infraestrutura;Jul/26;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Infraestrutura;Ago/26;16;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Infraestrutura;Set/26;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Infraestrutura;Out/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Segurança;Nov/25;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Segurança;Dez/25;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Segurança;Jan/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Segurança;Fev/26;12;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Segurança;Mar/26;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Segurança;Abr/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Segurança;Mai/26;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Segurança;Jun/26;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Segurança;Jul/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Segurança;Ago/26;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Segurança;Set/26;12;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Segurança;Out/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Transporte;Nov/25;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Transporte;Dez/25;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Transporte;Jan/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Transporte;Fev/26;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Transporte;Mar/26;12;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Transporte;Abr/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Transporte;Mai/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Transporte;Jun/26;12;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Transporte;Jul/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Transporte;Ago/26;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Transporte;Set/26;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Transporte;Out/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Vulnerabilidade;Nov/25;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Vulnerabilidade;Dez/25;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Vulnerabilidade;Jan/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Vulnerabilidade;Fev/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Vulnerabilidade;Mar/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Vulnerabilidade;Abr/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Vulnerabilidade;Mai/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Vulnerabilidade;Jun/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Vulnerabilidade;Jul/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Vulnerabilidade;Ago/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Vulnerabilidade;Set/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Vila Maria;Norte;Vulnerabilidade;Out/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Saneamento;Nov/25;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Saneamento;Dez/25;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Saneamento;Jan/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Saneamento;Fev/26;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Saneamento;Mar/26;12;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Saneamento;Abr/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Saneamento;Mai/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Saneamento;Jun/26;12;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Saneamento;Jul/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Saneamento;Ago/26;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Saneamento;Set/26;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Saneamento;Out/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Infraestrutura;Nov/25;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Infraestrutura;Dez/25;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Infraestrutura;Jan/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Infraestrutura;Fev/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Infraestrutura;Mar/26;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Infraestrutura;Abr/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Infraestrutura;Mai/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Infraestrutura;Jun/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Infraestrutura;Jul/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Infraestrutura;Ago/26;12;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Infraestrutura;Set/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Infraestrutura;Out/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Segurança;Nov/25;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Segurança;Dez/25;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Segurança;Jan/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Segurança;Fev/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Segurança;Mar/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Segurança;Abr/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Segurança;Mai/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Segurança;Jun/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Segurança;Jul/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Segurança;Ago/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Segurança;Set/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Segurança;Out/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Transporte;Nov/25;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Transporte;Dez/25;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Transporte;Jan/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Transporte;Fev/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Transporte;Mar/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Transporte;Abr/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Transporte;Mai/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Transporte;Jun/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Transporte;Jul/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Transporte;Ago/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Transporte;Set/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Transporte;Out/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Vulnerabilidade;Nov/25;4;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Vulnerabilidade;Dez/25;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Vulnerabilidade;Jan/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Vulnerabilidade;Fev/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Vulnerabilidade;Mar/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Vulnerabilidade;Abr/26;4;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Vulnerabilidade;Mai/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Vulnerabilidade;Jun/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Vulnerabilidade;Jul/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Vulnerabilidade;Ago/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Vulnerabilidade;Set/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Santana;Norte;Vulnerabilidade;Out/26;4;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Saneamento;Nov/25;16;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Saneamento;Dez/25;19;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Saneamento;Jan/26;18;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Saneamento;Fev/26;22;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Saneamento;Mar/26;24;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Saneamento;Abr/26;17;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Saneamento;Mai/26;20;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Saneamento;Jun/26;23;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Saneamento;Jul/26;18;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Saneamento;Ago/26;26;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Saneamento;Set/26;21;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Saneamento;Out/26;15;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Infraestrutura;Nov/25;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Infraestrutura;Dez/25;16;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Infraestrutura;Jan/26;15;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Infraestrutura;Fev/26;19;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Infraestrutura;Mar/26;20;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Infraestrutura;Abr/26;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Infraestrutura;Mai/26;17;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Infraestrutura;Jun/26;20;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Infraestrutura;Jul/26;15;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Infraestrutura;Ago/26;22;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Infraestrutura;Set/26;18;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Infraestrutura;Out/26;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Segurança;Nov/25;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Segurança;Dez/25;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Segurança;Jan/26;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Segurança;Fev/26;15;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Segurança;Mar/26;17;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Segurança;Abr/26;12;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Segurança;Mai/26;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Segurança;Jun/26;16;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Segurança;Jul/26;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Segurança;Ago/26;18;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Segurança;Set/26;15;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Segurança;Out/26;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Transporte;Nov/25;12;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Transporte;Dez/25;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Transporte;Jan/26;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Transporte;Fev/26;17;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Transporte;Mar/26;18;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Transporte;Abr/26;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Transporte;Mai/26;15;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Transporte;Jun/26;17;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Transporte;Jul/26;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Transporte;Ago/26;20;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Transporte;Set/26;16;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Transporte;Out/26;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Vulnerabilidade;Nov/25;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Vulnerabilidade;Dez/25;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Vulnerabilidade;Jan/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Vulnerabilidade;Fev/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Vulnerabilidade;Mar/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Vulnerabilidade;Abr/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Vulnerabilidade;Mai/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Vulnerabilidade;Jun/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Vulnerabilidade;Jul/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Vulnerabilidade;Ago/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Vulnerabilidade;Set/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Capão Redondo;Sul;Vulnerabilidade;Out/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Saneamento;Nov/25;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Saneamento;Dez/25;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Saneamento;Jan/26;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Saneamento;Fev/26;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Saneamento;Mar/26;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Saneamento;Abr/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Saneamento;Mai/26;12;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Saneamento;Jun/26;14;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Saneamento;Jul/26;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Saneamento;Ago/26;16;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Saneamento;Set/26;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Saneamento;Out/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Infraestrutura;Nov/25;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Infraestrutura;Dez/25;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Infraestrutura;Jan/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Infraestrutura;Fev/26;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Infraestrutura;Mar/26;12;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Infraestrutura;Abr/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Infraestrutura;Mai/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Infraestrutura;Jun/26;12;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Infraestrutura;Jul/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Infraestrutura;Ago/26;13;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Infraestrutura;Set/26;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Infraestrutura;Out/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Segurança;Nov/25;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Segurança;Dez/25;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Segurança;Jan/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Segurança;Fev/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Segurança;Mar/26;11;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Segurança;Abr/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Segurança;Mai/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Segurança;Jun/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Segurança;Jul/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Segurança;Ago/26;12;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Segurança;Set/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Segurança;Out/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Transporte;Nov/25;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Transporte;Dez/25;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Transporte;Jan/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Transporte;Fev/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Transporte;Mar/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Transporte;Abr/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Transporte;Mai/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Transporte;Jun/26;9;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Transporte;Jul/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Transporte;Ago/26;10;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Transporte;Set/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Transporte;Out/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Vulnerabilidade;Nov/25;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Vulnerabilidade;Dez/25;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Vulnerabilidade;Jan/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Vulnerabilidade;Fev/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Vulnerabilidade;Mar/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Vulnerabilidade;Abr/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Vulnerabilidade;Mai/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Vulnerabilidade;Jun/26;7;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Vulnerabilidade;Jul/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Vulnerabilidade;Ago/26;8;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Vulnerabilidade;Set/26;6;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js
+Tucuruvi;Norte;Vulnerabilidade;Out/26;5;Demonstrativo gerado a partir de volume-base e variação mensal em dados.js

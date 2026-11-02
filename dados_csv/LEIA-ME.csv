@@ -1,0 +1,9 @@
+﻿item;descricao
+Objetivo;Organizar os dados demonstrativos do HomeRisk para Google Sheets e SQL.
+Origem;js/dados.js do pacote HomeRisk_Fase2_dados.
+Natureza;Todos os registros são fictícios/demonstrativos.
+Aba Imoveis;8 imóveis demonstrativos.
+Aba Regioes;8 registros no nível de bairro.
+Aba Historico_Relatos;480 registros gerados a partir dos volumes e variações do dados.js.
+Aba Historico_Imoveis;32 índices (8 imóveis x 4 períodos sem data identificada).
+Aba Historico_Mercado;12 fatores de variação hipotética, sem preço real observado.
